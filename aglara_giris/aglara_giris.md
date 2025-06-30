@@ -16,9 +16,10 @@ VPN, internet bağlantını şifreleyen ve seni başka bir lokasyondaymış gibi
 
 MAC adresi (Media Access Control Address), bir ağ cihazının (örneğin bilgisayar, telefon, yazıcı gibi) ağ arayüzüne (ethernet kartı, Wi-Fi adaptörü) üretici tarafından atanan benzersiz bir kimlik numarasıdır.
 
+-mac adresi değiştirme-
 ~ifconfig wlan0 down //kapalı
 ~macchanger --random wlan0 //mac adresi değişir
 ~ifconfig wlan0 up
 
-sorun çıkarsa
+-sorun çıkarsa-
 ~service NetworkManager restart //ağlara res atar
