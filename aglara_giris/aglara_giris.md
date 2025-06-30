@@ -11,3 +11,7 @@ Olmasaydı, her siteye IP yazarak gitmek zorunda kalırdık.
 **VPN**
 VPN (Virtual Private Network)
 VPN, internet bağlantını şifreleyen ve seni başka bir lokasyondaymış gibi gösteren sanal özel bir ağdır.
+
+**MAC**
+
+MAC adresi (Media Access Control Address), bir ağ cihazının (örneğin bilgisayar, telefon, yazıcı gibi) ağ arayüzüne (ethernet kartı, Wi-Fi adaptörü) üretici tarafından atanan benzersiz bir kimlik numarasıdır.
