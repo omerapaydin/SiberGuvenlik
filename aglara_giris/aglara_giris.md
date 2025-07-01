@@ -23,3 +23,8 @@ MAC adresi (Media Access Control Address), bir ağ cihazının (örneğin bilgis
 
 -sorun çıkarsa-
 ~service NetworkManager restart //ağlara res atar
+
+---
+
+-iwconfig //wlan0 managed/monitor modda mı görmek için
+-airmon-ng start wlan0
