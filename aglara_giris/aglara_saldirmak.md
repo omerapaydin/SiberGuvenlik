@@ -15,4 +15,4 @@ WPA (Wi-Fi Protected Access), kablosuz ağlarda veri güvenliğini sağlamak iç
 
 //Crunch kali de yüklüdür
 ~crunch 8 9 xy123 -o testwordlist // 8-9 haneli password, içerisinde xy123 geçen
-~aircrack-ng handshake-file-01.cap -wtestwordlist // üstteki dosyaları ekle kırmaya başlar
+~aircrack-ng handshake-file-01.cap -w testwordlist // üstteki dosyaları ekle kırmaya başlar
