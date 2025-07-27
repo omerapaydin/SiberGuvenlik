@@ -16,3 +16,9 @@
 **_ Port _**
 -Her veri belirli portlardan sağlanır. Her servisin kendine has portu vardır.
 Örn: 80 portu Http , 443 portu Https (Web sitesi açmak için)
+
+////////
+
+**_ MITM (Man-in-the-Middle) Saldırısı (Ortadaki Adam) _**
+
+-Hacker bilgisayar kendini ortaya konumlandırır. Kurban, tüm verileri hackera yollar (çünkü onu modem sanıyor). Hacker da bu verileri modeme yollar (çünkü trafiğin devam etmesini istiyor). Arada durup, tüm verileri okuyabilir, değiştirebilir veya kaydedebilir.
