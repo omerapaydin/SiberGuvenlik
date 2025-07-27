@@ -10,3 +10,9 @@
 **_ nmap _**
 
 ~nmap 10.0.2.0/24 //aynı sonucu verir
+
+////////
+
+**_ Port _**
+-Her veri belirli portlardan sağlanır. Her servisin kendine has portu vardır.
+Örn: 80 portu Http , 443 portu Https (Web sitesi açmak için)
