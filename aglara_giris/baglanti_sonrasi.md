@@ -22,3 +22,8 @@
 **_ MITM (Man-in-the-Middle) Saldırısı (Ortadaki Adam) _**
 
 -Hacker bilgisayar kendini ortaya konumlandırır. Kurban, tüm verileri hackera yollar (çünkü onu modem sanıyor). Hacker da bu verileri modeme yollar (çünkü trafiğin devam etmesini istiyor). Arada durup, tüm verileri okuyabilir, değiştirebilir veya kaydedebilir.
+
+**_ ARP (Address Resolution Protocol) (Adres Çözümleme Protokolü) Açığı _**
+--Bir bilgisayar, bir IP adresine veri göndermek isterse önce o IP’ye ait MAC adresini öğrenmek için ağa ARP isteği (Who has?) yollar.Kurbana:
+“Modemin IP’si şu, ama MAC adresi benim” der.Modeme de:
+“Kurbanın IP’si şu, ama MAC adresi benim” der.
