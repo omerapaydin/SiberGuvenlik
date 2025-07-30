@@ -40,4 +40,4 @@
 ~arp -a //saldırılan bilgisayar da bu komutu çalıştırdığında aynı mac adresine sahip iki cihaz görürsen saldırıya uğruyorsun
 
 **_ Wireshark _**
---Wireshark, ağ trafiğini gerçek zamanlı olarak izlemek ve analiz etmek için kullanılan ücretsiz ve güçlü bir ağ analiz aracıdır.Ağa gelen ve giden tüm veri paketlerini görüntüler.Paketlerin içeriğini analiz eder (örneğin: IP, TCP, HTTP, DNS, vs.).Ağ sorunlarını tespit etmeye yardımcı olur. Güvenlik açıklarını incelemek için kullanılır (örneğin: şifrelenmemiş veriler, şüpheli bağlantılar).MITM gibi saldırılarda kurbanın verilerini görmek için kullanılır.
+--Wireshark, ağ trafiğini gerçek zamanlı olarak izlemek ve analiz etmek için kullanılan güçlü bir ağ analiz aracıdır.Ağa gelen ve giden tüm veri paketlerini görüntüler.Paketlerin içeriğini analiz eder (örneğin: IP, TCP, HTTP, DNS, vs.).Ağ sorunlarını tespit etmeye yardımcı olur. Güvenlik açıklarını incelemek için kullanılır (örneğin: şifrelenmemiş veriler, şüpheli bağlantılar).MITM gibi saldırılarda kurbanın verilerini görmek için kullanılır.
