@@ -42,6 +42,10 @@
 **_ Wireshark _**
 --Wireshark, ağ trafiğini gerçek zamanlı olarak izlemek ve analiz etmek için kullanılan güçlü bir ağ analiz aracıdır.Ağa gelen ve giden tüm veri paketlerini görüntüler.Paketlerin içeriğini analiz eder (örneğin: IP, TCP, HTTP, DNS, vs.).Ağ sorunlarını tespit etmeye yardımcı olur. Güvenlik açıklarını incelemek için kullanılır (örneğin: şifrelenmemiş veriler, şüpheli bağlantılar).MITM gibi saldırılarda kurbanın verilerini görmek için kullanılır.
 
+**_ Spoofing _**
+
+Spoofing, Türkçede “aldatma”, “kimliğe bürünme” veya “sahtecilik” anlamına gelir ve siber güvenlikte bir sistemin, cihazın ya da kişinin kimliğini taklit ederek yapılan saldırılara verilen genel isimdir.
+
 **_ Wireshark Saldırı İnceleme _**
 
 ~echo 1 > /proc/sys/net/ipv4/ip_forward
@@ -49,3 +53,5 @@
 ~arpspoof -i eth0 -t 10.0.2.1 10.0.2.6 //2 terminalle, hem modeme hem cihaz
 
 wireshark aç ve hareketleri incele saldırdığın cihazın
+
+**_ Bettercap _**
