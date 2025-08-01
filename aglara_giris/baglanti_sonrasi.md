@@ -55,3 +55,7 @@ Spoofing, Türkçede “aldatma”, “kimliğe bürünme” veya “sahtecilik�
 wireshark aç ve hareketleri incele saldırdığın cihazın
 
 **_ Bettercap _**
+Aktif bir saldırı aracıdır. MITM saldırıları, DNS spoofing, credential harvesting gibi saldırgan işlemleri yapabilir. CLI (komut satırı) üzerinden çalışır. Ağ üzerindeki diğer cihazları hedef alabilir. Paketleri değiştirebilir, yönlendirebilir.
+
+~bettercap -iface eth0
+~help //açıldıktan sonra yazarsan neler yapabidiğini gör
