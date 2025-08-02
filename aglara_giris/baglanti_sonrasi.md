@@ -60,10 +60,14 @@ Aktif bir saldırı aracıdır. MITM saldırıları, DNS spoofing, credential ha
 ~bettercap -iface eth0 //arayüz çıkar
 
 ~help //açıldıktan sonra yazarsan neler yapabileceğin görürünür
+~help ... // ... kısmına kullanmak istediğin method
 
 -- net.probe --
 
 ~net.probe on/off // nmap veya netdiscover ın yaptıklarını yapar. Ağları dürter. IP ve kullanıcının (telefon,bilgisayar..) isimleri görünür. net.recon da açılır.
 
-~net.show // topladığı bilgileri gösterir.
+~net.show // topladığı bilgileri gösterir.nmap veya netdiscover ın yaptıklarını yapar. Ağları dürter. IP , MAC adresi ve kullanıcının (telefon,bilgisayar..) isimleri görünür.
+
 ~net.clear // topladıüı bilgiler, siler.
+
+-- arp.spoof --
