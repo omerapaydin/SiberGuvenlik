@@ -19,7 +19,7 @@
 
 ////////
 
-**_ MITM (Man-in-the-Middle) Saldırısı (Ortadaki Adam) _**
+**_ MITM (Man-in-the-Middle) (Ortadaki Adam) Saldırısı _**
 
 -Hacker bilgisayar kendini ortaya konumlandırır. Kurban, tüm verileri hackera yollar (çünkü onu modem sanıyor). Hacker da bu verileri modeme yollar (çünkü trafiğin devam etmesini istiyor). Arada durup, tüm verileri okuyabilir, değiştirebilir veya kaydedebilir.
 
