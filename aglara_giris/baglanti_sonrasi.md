@@ -30,6 +30,8 @@
 
 **_ ARP Poison _**
 
+~apt i dsniff //arp saldırısı için
+
 ~netdiscover -i eth0 -r 10.0.2.0/24 -c 10 //mac ip adres öğren
 
 ~echo 1 > /proc/sys/net/ipv4/ip_forward //Normalde bir bilgisayar, gelen IP paketlerini sadece kendisine yönlendirilmişse işler. Ancak bu komut sayesinde o bilgisayar, gelen IP paketlerini başka bir cihaza yönlendirebilir hale gelir. Yani, bilgisayar bir router (yönlendirici) gibi davranır.
