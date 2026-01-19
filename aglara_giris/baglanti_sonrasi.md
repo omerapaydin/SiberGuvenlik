@@ -57,6 +57,9 @@ Spoofing, Türkçede “aldatma”, “kimliğe bürünme” veya “sahtecilik�
 wireshark aç ve hareketleri incele saldırdığın cihazın
 
 **_ Bettercap _**
+
+~apt install bettercap
+
 Aktif bir saldırı aracıdır. MITM saldırıları, DNS spoofing, credential harvesting gibi saldırgan işlemleri yapabilir. CLI (komut satırı) üzerinden çalışır. Ağ üzerindeki diğer cihazları hedef alabilir. Paketleri değiştirebilir, yönlendirebilir.
 
 ~bettercap -iface eth0 //arayüz çıkar
@@ -82,3 +85,23 @@ Aktif bir saldırı aracıdır. MITM saldırıları, DNS spoofing, credential ha
 
 ~arp.spoof on //üsttekileri ayarlayıp çalıştır
 ~net.sniff on //saldırıyı inceletir
+
+//saldırır ve hareketler ekranda incelenir
+
+**_ Http-Https-Hsts _**
+
+HTTP (HyperText Transfer Protocol)
+-Şifreleme yoktur
+-Veriler açık metin olarak gider
+-Güvenli değildir (şifreler çalınabilir)
+
+HTTPS (HTTP Secure)
+-SSL/TLS ile şifrelenir
+-Veri güvenli şekilde iletilir
+-Günümüzde standarttır
+
+HSTS (HTTP Strict Transport Security)
+-Tarayıcıya şunu söyler:
+-“Bu siteye sadece HTTPS ile bağlan”
+-HTTP’ye düşmeyi engeller
+-HTTPS’i zorunlu hale getirir
