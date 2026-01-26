@@ -77,7 +77,7 @@ Aktif bir saldırı aracıdır. MITM saldırıları, DNS spoofing, credential ha
 
 -- arp.spoof --
 
-~help arp.spoof // yaz parametreler çıkar
+~help arp.spoof // yaz parametrelhelp er çıkar
 
 ~set arp.spoof.fulldublex true //hem hedefe hem modeme saldırır
 ~set arp.spoof.internal true

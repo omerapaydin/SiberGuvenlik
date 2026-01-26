@@ -1,5 +1,9 @@
 ### Sunucu ve Bilgisayar Sızma Testleri
 
+**_Recon_**
+
+- Hedef hakkında bilgi toplama süreci
+
 **_ Exploit _**
 
 - Bir sistemdeki güvenlik açığını kullanarak istenmeyen bir işlem yaptıran kod veya tekniktir.
