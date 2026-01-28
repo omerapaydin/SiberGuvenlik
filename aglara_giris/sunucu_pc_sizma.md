@@ -60,8 +60,8 @@ açık olan servislerin versiyonlarını bul, hızlı yap.
 
 nmap → temel
 -p- → tüm portlar
--sS → stealth
--sV → servis
--O → OS
+-sS → stealth // Daha az fark edilerek yapılan tarama demektir.
+-sV → servis //HTTP,SSH,MySQL...
+-O → OS //Hedef sistemin hangi işletim sistemini kullandığını tahmin etme olayıdır.
 -sC → script
 -A → hepsi
