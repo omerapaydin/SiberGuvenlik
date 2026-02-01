@@ -10,7 +10,7 @@
 **_ nmap _**
 
 ~nmap 10.0.2.0/24 //aynı sonucu verir
-
+clea
 ////////
 
 **_ Port _**
@@ -70,7 +70,7 @@ Aktif bir saldırı aracıdır. MITM saldırıları, DNS spoofing, credential ha
 -- net.probe --
 
 ~net.probe on/off // nmap veya netdiscover ın yaptıklarını yapar. Ağları dürter. IP ve kullanıcının (telefon,bilgisayar..) isimleri görünür. net.recon da açılır.
-
+help
 ~net.show // topladığı bilgileri gösterir.nmap veya netdiscover ın yaptıklarını yapar. Ağları dürter. IP , MAC adresi ve kullanıcının (telefon,bilgisayar..) isimleri görünür.
 
 ~net.clear // topladığı bilgiler, siler.
@@ -79,9 +79,9 @@ Aktif bir saldırı aracıdır. MITM saldırıları, DNS spoofing, credential ha
 
 ~help arp.spoof // yaz parametrelhelp er çıkar
 
-~set arp.spoof.fulldublex true //hem hedefe hem modeme saldırır
+~set arp.spoof.fullduplex true //hem hedefe hem modeme saldırır
 ~set arp.spoof.internal true
-~set arp.spoof.targets 10.0.2.6 //saldırılacak hedefler girilir "," koyup diğer hedefler de yazılabilir
+~set arp.spoof.targets 10.0.2.6 //saldırılacak hedefler girilir "," koyup diğer hedefler de yazılabilirhelp
 
 ~arp.spoof on //üsttekileri ayarlayıp çalıştır
 ~net.sniff on //saldırıyı inceletir
