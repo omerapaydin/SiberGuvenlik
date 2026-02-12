@@ -65,3 +65,8 @@ nmap → temel
 -O → OS //Hedef sistemin hangi işletim sistemini kullandığını tahmin etme olayıdır.
 -sC → script
 -A → hepsi
+
+**_SunucuBilgisyar Hackleme_**
+
+~nmap -v -sS -A -T4 taget //sonuçlar kaydedilip açık portlarla sızma denemeleri yapılır
+-Açık portlar sızma için başlangıç noktasıdır, ama başarı: Servis zafiyetine bağlıdır
