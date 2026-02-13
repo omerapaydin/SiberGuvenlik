@@ -32,3 +32,8 @@ MAC adresi (Media Access Control Address), bir ağ cihazının (örneğin bilgis
 -iwconfig //wlan0 managed/monitor modda mı görmek için
 -airmon-ng start wlan0 //monitor moda geçer. bağlı olmadığımız ağlardan bilgi almak için
 --airmon-ng stop wlan0mon /managed moda geçer (nete bağlanmak için)
+
+IP Türü ----- Nerede Kullanılır
+
+192.168.x.x ---- Ev/LAN
+10.x.x.x ---- Kurumsal LAN
