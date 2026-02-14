@@ -120,7 +120,7 @@ msf6 exploit(multi/samba/usermap_scrip) > sessions 1
 uname -a //hacklediğin servis mi bak
 ls
 
-4. --Meterpreter--SQL Port 1433 / 3306 / 5432 gibi portlarda çalışır.
+4. --Meterpreter--SQL Port 1433 / 3306 / 5432
 
 - Bir sisteme erişim sağlandıktan sonra: Komut çalıştırma, Dosya işlemleri, Ekran görüntüsü, Keylogging (yetkili testte) ,Ağ pivoting, Yetki yükseltme (uygun senaryoda)
 - Meterpreter’in SQL servisi üzerinden tetiklenmiş olması muhtemel.Hep sql portuyla tetiklenmeyebilir
