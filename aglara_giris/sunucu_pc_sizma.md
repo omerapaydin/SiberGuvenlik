@@ -159,3 +159,12 @@ meterpreter > help //yapabileceklerin çıkar
 - -A, Aggressive Scan (Agresif Tarama). Ne varsa gösterir
 
 - -p- tüm portlar
+
+**_Script Çalıştırmak _**
+
+- nmap.org sitesinden scriptleri bulup çalıştırılabilir.
+- örnek:
+  ~nmap 10.0.2.12 --script http-enum.nse //Web sunucusunda: Gizli dizin var mı ? Yönetim paneli var mı ? Yanlışlıkla açık bırakılmış klasör var mı ?
+- Script tabanlı analiz yapar (-sC) kapsamlı
+
+* -oN sonuc.txt // bulduğu sonucu kaydeder
