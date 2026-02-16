@@ -144,3 +144,18 @@ meterpreter > help //yapabileceklerin çıkar
 - Zafiyeti kapat
 - Yetkiyi sınırla
 - Anomaliyi yakala
+
+**_nmap Detayları _**
+
+- tcp : Nmap TCP kullanan portları tarar. -sT //genelde bu kullanılır
+- udp : UDP genelde hızın önemli olduğu yerlerde -sU
+
+- -T(0-5) 0-2 arası yavaş ,3-5 hızlı. Hızlı olması dikkat çeker farklı ağdaysan yavaş at.
+
+- -O işletim sistemi
+
+- -sV servisleri ve detaylarını gösterir
+
+- -A, Aggressive Scan (Agresif Tarama). Ne varsa gösterir
+
+- -p- tüm portlar
