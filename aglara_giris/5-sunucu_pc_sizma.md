@@ -1,6 +1,7 @@
 ### Sunucu ve Bilgisayar Sızma Testleri
 
 - hacktrick.xyz sitesi incele
+  -openvpn machine.ovpn //vpn çalıstır
 
 **_Recon_**
 
