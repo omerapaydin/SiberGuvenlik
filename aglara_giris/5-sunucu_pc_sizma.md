@@ -227,3 +227,11 @@ yeni terminal
 ~vncviewer
 ~vncviewer 10.0.2.12
 password: //bulunan password girilir. Arayüzlü terminal çıkar
+
+---
+
+- ssh giriş
+  ~ssh omer@10.10.245
+  ~password
+
+* 80 portu varsa web site var demektir, tarayıcıdan o ip gir
