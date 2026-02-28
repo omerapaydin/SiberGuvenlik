@@ -57,3 +57,22 @@
   [TheFatRat] > 2 // 2.Create Fud 100% Backdoor with Fudwin 1.0 seçeneğini seçeriz kesin yakalanmayacağını söyler.
   [TheFatRat] > 2 //Slow But Powerfull
   ... backdoor dosyası oluşturulur.
+
+**_ IP _**
+
+- Public IP : İnternette seni temsil eden IP adresidir. Dış dünyaya karşı görünen adresindir.
+- Local IP : Ev / ofis içindeki cihazlara verilen IP’dir. Modem tarafından dağıtılır. Sadece aynı ağ içinden erişilebilir.
+
+* Port forwarding public IP üzerinden yapılır
+* NAT sistemi public ↔ local dönüşüm yapar
+* Bilgisayarın isteği önce modemine gider, Modem NAT (Network Address Translation) yapar, İstek dış dünyaya senin Public IP adresinle çıkar
+
+\*\* Sen tarayıcıya google.com yazarsın
+DNS, google.com’u IP’ye çevirir (örneğin 142.x.x.x gibi)
+Bilgisayar → modem (local IP ile)
+Modem → internet (public IP ile)
+Google cevabı senin public IP’ne yollar
+Modem cevabı doğru local IP’ye yönlendirir
+
+- ifconfig komutunu çalıştırdığında gördüğün IP: Local IP (yerel IP)
+- Public IP’yi Nasıl Görürsün? > curl ifconfig.me
