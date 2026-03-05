@@ -1,5 +1,12 @@
 ### Temel Komutlar
 
+~apt update // Paket yönetici günceller
+~cd /opt // Genelde buraya indirilir
+~git clone https://github....git // Kodları indirir
+~ls //
+~cd StromBreaker //klasör gir
+~sudo bash install.sh //kurulum
+
 ~sudo su //en yetkili kullanıcı yapar
 
 ~setxkbmap tr //dil değişir
