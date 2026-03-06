@@ -56,3 +56,37 @@ En çok şu durumlarda kullanılır:
 * ./ngrok config add-authotoken ...
 * ./ngrok http 2525 // stormbreakerdaki localhost çalışır ordaki ip tarayıcıya cp
   -- açılan arayüzdeki linkleri kurbana açtırırsan arayüzde atılan linkle ilgili bilgiler çıkmaya başlar.
+
+**_Malware(Zararlı yazılımlar) _**
+
+1- Ransomware
+Ransomware, bilgisayardaki dosyaları şifreleyip fidye isteyen zararlı yazılımdır.
+Para verilmeden dosyalar açılmaz.
+
+2- Spyware
+Spyware, kullanıcıyı gizlice izleyen zararlı yazılımdır.
+Şunları çalabilir:
+• şifreler
+• klavye girişleri
+• kişisel bilgiler
+
+3-Adware
+Adware, kullanıcıya zorla reklam gösteren yazılımdır.
+Genelde:
+• tarayıcıya reklam ekler
+• sürekli pop-up açar.
+
+4-Worm (Solucan)
+Worm, kendini otomatik olarak ağda yayabilen zararlı yazılımdır.
+Bir bilgisayardan diğerine insan müdahalesi olmadan bulaşabilir.
+
+5-Trojan (Truva Atı)
+Trojan, faydalı program gibi görünen ama içinde zararlı kod bulunan yazılımdır.
+Kullanıcı indirip çalıştırınca saldırgan sisteme erişebilir.
+
+6-Botnet
+Botnet, hackerın kontrol ettiği çok sayıda ele geçirilmiş bilgisayar ağıdır.
+Bu bilgisayarlar genelde şu amaçla kullanılır:
+• DDoS saldırısı
+• spam gönderme
+• kripto madenciliği
