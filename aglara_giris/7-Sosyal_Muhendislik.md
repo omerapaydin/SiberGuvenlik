@@ -158,3 +158,7 @@ EndFunc ;==>\_GetURLImage
 - Tarayıcıdan "right to left chacter override" herhangi site veya unicode explorer fir. copy yap
 
 -oluşan .exe doyasını isim değiştirme açılır. Sonuna yapıştır. İsim değiştir
+
+**_ Sahte Email ile Trojan yollamak _**
+
+- tarayıcı da "anonymous email sender" ile aldatıcı bir mail gönderilebilir
