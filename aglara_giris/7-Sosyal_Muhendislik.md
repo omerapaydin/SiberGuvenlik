@@ -90,3 +90,13 @@ Bu bilgisayarlar genelde şu amaçla kullanılır:
 • DDoS saldırısı
 • spam gönderme
 • kripto madenciliği
+
+---
+
+\*\*Maltego : Açık kaynak istihbaratı (OSINT) toplamak ve kişiler, domainler, IP’ler arasındaki ilişkileri görselleştirmek için kullanılan bir analiz aracıdır. Klide yüklüdür
+\*\*Sherlock :bir kullanıcı adının (username) hangi sosyal medya ve web sitelerinde kullanıldığını bulmaya yarayan OSINT aracıdır.
+
+> apt install sherlock
+> sherlock omerapaydin
+
+---
