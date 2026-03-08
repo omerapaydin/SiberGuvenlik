@@ -69,3 +69,13 @@ res.Body = body.replace(
 - Bu dosyalar /usr/share/bettercap/caplets altına klasör halinde yapıştır bu iki dosyayı. Klasöre beefcustom ismi verilir (opsiyonel)
 
 > bettercap -iface eth0 -caplet /usr/share/bettercap/caplets/beefcustom/beefcustom.cap //tüm işlemleri yapar. http web sitelerinde deneyebilirisin.Kurban browser kullandığında Online browsers kısmında kurban görünür
+
+- online olan tarayıcı açılıp "commands" kısmında kurbana neler yapılabileceği gösterilir.
+- Spyder eye seçilir ve execute yapıldığıında kurbanın ekran anlık ekran görüntüsü alınır.
+
+**_ Sosyal Medya Şifreleri Nasıl Çalınır _**
+
+- Commands kısmında Pretty Thef kısmı açılır. Dialog Type:Facebook,Insta... ,
+  Backing: Grey , Logo : Logo girilir inandırıcılık için
+
+- Kurbanın tarayıcısında küçük aarayüz açılır. Facebook,instagram tekrar giriş yapın tarzı. Kurban bilgilerini girerse şifre eposta alıınır
