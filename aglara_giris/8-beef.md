@@ -101,4 +101,10 @@ res.Body = body.replace(
 > msf6 exploit(multi/handler) > session -l
 > msf6 exploit(multi/handler) > session -1
 
-**_ Backdoor İletme Yöntemi _**
+**_ Kendimizi Nasıl Koruruz _**
+
+- Trayıcıdan veya herhangi biri tarafından gelen/indirilen dosyaları sağ tik>isim değiştir yapılıp right to left chacter override var mı bakabiliriz
+
+- Dosyaya sağ tik> özellikler den dosya tipi incelenir .exe olup olmadığı
+
+- arp -a ile aynı mac adresine sahip iki cihaz var mı bakılır
