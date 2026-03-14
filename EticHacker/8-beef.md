@@ -78,7 +78,7 @@ res.Body = body.replace(
 - Commands kısmında Pretty Thef kısmı açılır. Dialog Type:Facebook,Insta... ,
   Backing: Grey , Logo : Logo girilir inandırıcılık için
 
-- Kurbanın tarayıcısında küçük aarayüz açılır. Facebook,instagram tekrar giriş yapın tarzı. Kurban bilgilerini girerse şifre eposta alıınır
+- Kurbanın tarayıcısında küçük arayüz açılır. Facebook,instagram tekrar giriş yapın tarzı. Kurban bilgilerini girerse şifre eposta alıınır
 
 **_ Backdoor İletme Yöntemi _**
 
