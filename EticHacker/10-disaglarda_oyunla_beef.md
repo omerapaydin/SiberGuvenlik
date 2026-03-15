@@ -24,3 +24,13 @@
 - Terminalde çıkan hook url kopyalanır
   > nano index.html //hook kodu eklenir
 - kullanıcı siteye girdiğinde online tarayıcılarda çıkar
+
+**_ No Ip _**
+
+- 123.45.67.89
+  omer.ddns.net
+  Yani IP yerine isim kullanırsın.
+
+**_ Kendimizi Nasıl Koruruz _**
+
+- Sağ tik ve sayfa kaynağıı incele. Hook kodu var mı bakılabilir
