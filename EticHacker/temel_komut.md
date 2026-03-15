@@ -9,6 +9,8 @@
 
 ~sudo su //en yetkili kullanıcı yapar
 
+~ ./calıstırılacakdosya
+
 ~setxkbmap tr //dil değişir
 
 ~pwd // Bulunduğun klasörün tam yolunu yazdırır.
