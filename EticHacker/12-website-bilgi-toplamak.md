@@ -26,3 +26,13 @@
 - WHOIS sorgusu, bir domain (alan adı) veya IP adresi hakkında kayıt bilgilerini öğrenmek için yapılan sorgudur
 - Genelde domainin kime ait olduğu, ne zaman alındığı, hangi firmadan alındığı gibi bilgiler gösterir.
 - archive.com / icann.com
+
+**_ robots.txt _**
+
+- Bu dosya bir web sitesinde bulunur ve arama motoru botlarına hangi sayfaya girip giremeyeceklerini söyler.
+- Site sonuna eklenir : https://siteadi.com/robots.txt
+- Gizli klasörleri gösterebilir (bazen güvenlik açığı olur)
+
+> dirb https://siteadi.com
+
+- Web sitelerinde gizli klasör ve dosyaları bulmak için kullanılan bir araçtır. Yani siteye kelime listesi ile tek tek klasör dener.
