@@ -1,28 +1,33 @@
-### Temel Komutlar
+# Temel Komutlar
 
-~apt update // Paket yönetici günceller
-~cd /opt // Genelde buraya indirilir
-~git clone https://github....git // Kodları indirir
-~ls //
-~cd StromBreaker //klasör gir
-~sudo bash install.sh //kurulum
+## Paket Yönetimi ve Kurulum
 
-~sudo su //en yetkili kullanıcı yapar
+- `apt update`: Paket yöneticisini günceller.
+- `cd /opt`: Genellikle yazılımlar buraya indirilir.
+- `git clone https://github.com/... .git`: GitHub'dan kodları indirir.
+- `sudo bash install.sh`: Kurulum scriptini çalıştırır.
 
-~ ./calıstırılacakdosya
+## Kullanıcı ve Sistem
 
-~setxkbmap tr //dil değişir
+- `sudo su`: En yetkili kullanıcı (root) yapar.
+- `./çalıştırılacakdosya`: Çalıştırılabilir dosyayı çalıştırır.
+- `setxkbmap tr`: Klavye düzenini Türkçe yapar.
 
-~pwd // Bulunduğun klasörün tam yolunu yazdırır.
-~ls //Bulunduğun Dosya ve klasörleri gösterir.
-~cd klasorAdi //Belirtilen klasöre girer.
-~cd .. //bir üst klasör
-~mkdir yeniKlasor //Klasör oluşturur
-~rm dosya.txt //Dosya siler
+## Dosya ve Klasör İşlemleri
 
-~ ping google.com //ip adresini öğrenmek istediğimiz sitelere atılabilir
+- `pwd`: Bulunduğun klasörün tam yolunu yazdırır.
+- `ls`: Bulunduğun dizindeki dosya ve klasörleri listeler.
+- `cd klasorAdi`: Belirtilen klasöre girer.
+- `cd ..`: Bir üst klasöre çıkar.
+- `mkdir yeniKlasor`: Yeni bir klasör oluşturur.
+- `rm dosya.txt`: Dosyayı siler.
 
-**_Dosya_**
-~touch nmapsonuc.txt //oluştur
-~nano nmapsonuc.txt // düzenle
-~cat nmapsonuc.txt //okur
+## Ağ ve Ağ Araçları
+
+- `ping google.com`: Belirtilen siteye ping atarak IP adresini öğrenir.
+
+## Dosya Düzenleme
+
+- `touch nmapsonuc.txt`: Boş bir dosya oluşturur.
+- `nano nmapsonuc.txt`: Dosyayı Nano editörü ile düzenler.
+- `cat nmapsonuc.txt`: Dosyanın içeriğini terminale yazdırır.
