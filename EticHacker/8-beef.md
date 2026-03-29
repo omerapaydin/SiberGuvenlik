@@ -1,6 +1,6 @@
 ### Beef
 
-BeEF, bir kullanıcının web tarayıcısını hedef alarak kontrol etmeyi amaçlayan bir penetration testing aracıdır.
+BeeF, bir kullanıcının web tarayıcısını hedef alarak kontrol etmeyi amaçlayan bir penetration testing aracıdır.
 
 Nasıl çalışır?
 

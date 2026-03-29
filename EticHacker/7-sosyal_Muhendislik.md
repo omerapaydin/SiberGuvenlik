@@ -32,7 +32,7 @@ Basit Örnekler
 
 **_ ngrok _**
 
-- Sir, ngrok kısaca yerel bilgisayarında çalışan bir servisi internet üzerinden erişilebilir hale getiren bir araçtır.
+- Ngrok kısaca yerel bilgisayarında çalışan bir servisi internet üzerinden erişilebilir hale getiren bir araçtır.
 
 En çok şu durumlarda kullanılır:
 
