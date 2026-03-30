@@ -33,4 +33,4 @@
 
 **_ Kendimizi Nasıl Koruruz _**
 
-- Sağ tik ve sayfa kaynağıı incele. Hook kodu var mı bakılabilir
+- Sağ tik ve sayfa kaynağı incele. Hook kodu var mı bakılabilir

