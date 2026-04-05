@@ -1,5 +1,7 @@
 # Parola Ve Hash Kırma
 
+- /usr/share/wordlist/
+
 ** Hash Nedir? **
 
 - Hash, bir veriyi (örneğin şifreyi) geri döndürülemez şekilde sabit uzunlukta bir değere çevirir.
@@ -35,9 +37,21 @@
   > unshadow
   > unshadow /etc/passwd /etc/shadow //hashlari birleştirir orjinal hale getirir
 
-** Hashcat **
+---
+
+### Hashcat
 
 → Dünyanın en güçlü password hash kırma (cracking) aracıdır
 • GPU kullanır
 • Çok hızlıdır
 • Birçok hash türünü destekler
+
+- Kali Linux için
+
+> hashcat -m 1800 mykalihash.txt /usr/share/wordlist/fasttract.txt // hash lerin olduğu klasöre konumlanılır. 1800 kendi hash bölümünü bul. Kali için 512 $6$ operating system olan seçilir. Sonuna wordlist eklenir. Wordlist içinde hedef password varsa şifre bulunur.
+
+> hashcat -m 1800 mykalihash.txt /usr/share/wordlist/fasttract.txt --show // Daha önce bu hash kırılmışsa kırılan hash görünür
+
+> hashcat -m 1800 mykalihash.txt /usr/share/wordlist/fasttract.txt --potfile-disable // Kırılan hash görünmez yeniden kırma işlemi yapılır.
+
+- Linux için

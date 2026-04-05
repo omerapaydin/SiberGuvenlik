@@ -31,3 +31,7 @@
 - `touch nmapsonuc.txt`: Boş bir dosya oluşturur.
 - `nano nmapsonuc.txt`: Dosyayı Nano editörü ile düzenler.
 - `cat nmapsonuc.txt`: Dosyanın içeriğini terminale yazdırır.
+
+---
+
+- wordlist.txt | pass //dosyanın içinde pas geöçenleri bulur
