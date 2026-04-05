@@ -34,4 +34,4 @@
 
 ---
 
-- wordlist.txt | pass //dosyanın içinde pas geöçenleri bulur
+- wordlist.txt | grep pass //dosyanın içinde pas geöçenleri bulur

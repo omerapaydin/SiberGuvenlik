@@ -55,3 +55,9 @@
 > hashcat -m 1800 mykalihash.txt /usr/share/wordlist/fasttract.txt --potfile-disable // Kırılan hash görünmez yeniden kırma işlemi yapılır.
 
 - Linux için
+
+> hashcat -m 500 mylinuxhash.txt /usr/share/wordlist/fasttract.txt // hash lerin olduğu klasöre konumlanılır. 1800 kendi hash bölümünü bul. Kali için MD5 $1$ operating system olan seçilir. Sonuna wordlist eklenir. Wordlist içinde hedef password varsa şifre bulunur.
+
+- Windows için
+
+> hashcat -m 1000 mywindowshash.txt /usr/share/wordlist/fasttract.txt // hash lerin olduğu klasöre konumlanılır. 1800 kendi hash bölümünü bul. Kali için NTLM operating system olan seçilir. Sonuna wordlist eklenir. Wordlist içinde hedef password varsa şifre bulunur.
