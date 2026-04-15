@@ -2,7 +2,7 @@
 
 ## 1. IP Adresi (Internet Protocol)
 
-IP adresi, bir cihazın ağ üzerindeki **benzersiz kimliğidir**. İnternete bağlı her cihazın bir IP adresi vardır.
+IP adresi, bir cihazın ağ üzerindeki **benzersiz kimliğidir**. İnternete bağlı her cihazın bir IP adresi vardır. Yaklaşık konum tahmini yapılabilir
 
 - Amaç: Cihazlar arası iletişimi sağlamak
 - Örnek: `192.168.1.1`, `157.240.1.35`
