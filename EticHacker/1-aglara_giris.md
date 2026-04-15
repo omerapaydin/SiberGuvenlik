@@ -1,41 +1,71 @@
-### Ağlara Giriş
+# Ağlara Giriş (Networking Basics)
 
-**IP**
-IP (Internet Protocol), cihazların internet veya bir ağ üzerinden birbirleriyle iletişim kurabilmesi için kullandığı benzersiz adres sistemidir.
+## 1. IP Adresi (Internet Protocol)
 
-**DNS**
+IP adresi, bir cihazın ağ üzerindeki **benzersiz kimliğidir**. İnternete bağlı her cihazın bir IP adresi vardır.
 
-DNS (Domain Name System)
-Sen tarayıcıya www.facebook.com yazarsın, DNS bunu otomatik olarak IP adresine çevirir (örneğin 157.240.1.35) ve siteye ulaşmanı sağlar.
-Olmasaydı, her siteye IP yazarak gitmek zorunda kalırdık.
-
-**VPN**
-VPN (Virtual Private Network)
-VPN, internet bağlantını şifreleyen ve seni başka bir lokasyondaymış gibi gösteren sanal özel bir ağdır.
-
-**MAC**
-
-MAC adresi (Media Access Control Address), bir ağ cihazının (örneğin bilgisayar, telefon, yazıcı gibi) ağ arayüzüne (ethernet kartı, Wi-Fi adaptörü) üretici tarafından atanan benzersiz bir kimlik numarasıdır.
-
---Terminal İşlemleri--
-
--mac adresi değiştirme-
-
-> ifconfig wlan0 down //kapalı
-> macchanger --random wlan0 //mac adresi değişir
-> ifconfig wlan0 up
-
--sorun çıkarsa-
-
-> service NetworkManager restart //ağlara res atar
+- Amaç: Cihazlar arası iletişimi sağlamak
+- Örnek: `192.168.1.1`, `157.240.1.35`
 
 ---
 
-> iwconfig //wlan0 managed/monitor modda mı görmek için
-> airmon-ng start wlan0 //monitor moda geçer. bağlı olmadığımız ağlardan bilgi almak için
-> airmon-ng stop wlan0mon /managed moda geçer (nete bağlanmak için)
+## 2. DNS (Domain Name System)
 
-IP Türü ----- Nerede Kullanılır
+DNS, insanların anlayabileceği domain isimlerini IP adreslerine çevirir.
+
+### Çalışma Mantığı
+
+1. Tarayıcıya `www.facebook.com` yazılır
+2. DNS sunucusu bunu IP’ye çevirir
+3. Tarayıcı o IP’ye istek atar
+4. Site açılır
+
+DNS olmasaydı:
+
+- Her siteye IP adresi ile erişmek zorunda kalırdık
+
+---
+
+## 3. VPN (Virtual Private Network)
+
+VPN, internet trafiğini **şifreleyen** ve kullanıcıyı farklı bir lokasyondaymış gibi gösteren teknolojidir.
+
+### Özellikleri
+
+- IP adresini gizler
+- Veri güvenliği sağlar
+- Coğrafi kısıtlamaları aşar
+
+---
+
+## 4. MAC Adresi (Media Access Control)
+
+MAC adresi, ağ kartına üretici tarafından verilen **benzersiz fiziksel kimliktir**.
+
+- Örnek: `00:1A:2B:3C:4D:5E`
+- Normalde değişmez, ancak yazılımsal olarak değiştirilebilir
+
+---
+
+-mac adresi değiştirme-
+
+- > ifconfig wlan0 down // Arayüzü kapat
+- > macchanger --random wlan0 // mac adresi değişir
+- > ifconfig wlan0 up
+
+-sorun çıkarsa-
+
+- > service NetworkManager restart // Ağ servisini yeniden başlat
+
+---
+
+## Wireless Komutları
+
+- > iwconfig //wlan0 managed/ Monitor modda mı görmek için
+- > airmon-ng start wlan0 // Monitor moda geçer. bağlı olmadığımız ağlardan bilgi almak için. Dinleme modu
+- > airmon-ng stop wlan0mon / Managed moda geçer
+
+## IP Türü ----- Nerede Kullanılır
 
 192.168.x.x ---- Ev/LAN
 10.x.x.x ---- Kurumsal LAN
