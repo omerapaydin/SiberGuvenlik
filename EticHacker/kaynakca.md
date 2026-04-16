@@ -1,0 +1,2 @@
+- Etik Hacker Olma Kursu - Atıl Samancıoğlu
+- OpenAI. (2026). ChatGPT. https://chat.openai.com/
