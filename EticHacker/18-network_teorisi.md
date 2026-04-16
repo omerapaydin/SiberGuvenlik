@@ -44,8 +44,45 @@ Nasıl?
 
 ## Private Networks
 
-           Network   Subnet Mask  Kullanılabilir IP
+          Network   Subnet Mask  Kullanılabilir IP
 
 - Class A - 10.0.0.0 - 255.0.0.0 - 16777214
 - Class B - 172.16.0.0 - 255.240.0.0 - 1048574
 - Class C - 192.168.0.0 - 255.255.255.0 - 254
+
+## TCP VS UDP
+
+- TCP = “Garantili ama yavaş”
+- UDP = “Hızlı ama riskli”
+
+### TCP (Transmission Control Protocol) (SYN-SYN ACK-ACK) :
+
+- FTP (21), SSH (22), Telnet (23), SMTP(25), HTTP(80),HTTPS(443)
+
+1. SYN
+   • Client → Server
+   • “Bağlanmak istiyorum”
+2. SYN-ACK
+   • Server → Client
+   • “Tamam, ben de hazırım”
+3. ACK
+   • Client → Server
+   • “Bağlantı kuruldu”
+
+- Güvenilir (reliable)
+- Paketler sırayla gelir
+- Kayıp olursa tekrar gönderilir
+- Daha yavaş ama garanti
+
+### UDP (User Datagram Protocol)
+
+- DHCP(67), SNMP(161)
+
+- Bağlantısızdır (connectionless)
+  • Handshake yok
+  • Direkt veri gönderilir
+
+- Çok hızlı
+- Güvenilir değil
+- Paket kaybı olabilir
+- Sıra garantisi yok
