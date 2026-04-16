@@ -35,3 +35,5 @@
 ---
 
 - wordlist.txt | grep pass //dosyanın içinde pas geçenleri bulur
+
+- Crack, siber güvenlik ve yazılım dünyasında genelde şu anlamlarda kullanılır:Parola kırma ,Yazılım kırma
