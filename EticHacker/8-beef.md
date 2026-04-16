@@ -1,4 +1,6 @@
-### Beef
+# Beef
+
+******\*\*\******* burda akldıık
 
 BeeF, bir kullanıcının web tarayıcısını hedef alarak kontrol etmeyi amaçlayan bir penetration testing aracıdır.
 
@@ -13,7 +15,7 @@ Nasıl çalışır?
 - Terminalde hook kodu verilir js.
 - Solda kurbanın online olup olmadığı görünür
 
-**_ Hedefi Oltaya Takmak _**
+## Hedefi Oltaya Takmak
 
 - Ağ içi saldırılar için
 - Web sitesi oluşturulmalı ve js kodu koyulmalı
