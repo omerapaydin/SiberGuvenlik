@@ -7,3 +7,9 @@
 - Tüm çalışmalar yalnızca izinli ve yasal ortamlarda gerçekleştirilmelidir !!!!!!!
 
 - Metasploitable, DVWA gibi platformlar kullanılarak hazırlanmıştır.
+
+
+KAYNAKÇA:
+
+- Etik Hacker Olma Kursu - Atıl Samancıoğlu
+- OpenAI. (2026). ChatGPT. https://chat.openai.com/
