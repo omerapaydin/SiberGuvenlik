@@ -41,3 +41,11 @@ Nasıl?
   • Toplam: ≈ 3.4 × 10³⁸ adres (inanılmaz büyük)
   • 128 bit’ten oluşur
   • Örnek: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+
+## Private Networks
+
+           Network   Subnet Mask  Kullanılabilir IP
+
+- Class A - 10.0.0.0 - 255.0.0.0 - 16777214
+- Class B - 172.16.0.0 - 255.240.0.0 - 1048574
+- Class C - 192.168.0.0 - 255.255.255.0 - 254
