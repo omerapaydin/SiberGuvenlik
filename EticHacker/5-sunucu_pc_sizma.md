@@ -172,8 +172,13 @@ meterpreter > help // Meterpreter içerisinde kullanabileceğin tüm modülleri 
 ### Script Çalıştırmak
 
 - nmap.org sitesinden scriptleri bulup çalıştırılabilir.
+
+- /usr/share/nmap/scripts/ dizini, Nmap’in NSE (Nmap Scripting Engine) scriptlerinin bulunduğu ana klasördür.
+
+- Mevcut script dizininde bulunmayan bir zafiyet veya servis için, önce Nmap ile yapılan versiyon taraması (-sV) sonucunda elde edilen servis bilgilerine göre, ilgili NSE scripti Nmap’in resmi script deposundan temin edilerek sisteme eklenip çalıştırılabilir
+
 - örnek:
-  > nmap 10.0.2.12 --script http-enum.nse //Web sunucusunda: Gizli dizin var mı ? Yönetim paneli var mı ? Yanlışlıkla açık bırakılmış klasör var mı ?
+  > nmap --script http-enum.nse 10.0.2.12 //Web sunucusunda: Gizli dizin var mı ? Yönetim paneli var mı ? Yanlışlıkla açık bırakılmış klasör var mı ?
 - Script tabanlı analiz yapar (-sC) kapsamlı
 
 ### Script Argümanları
