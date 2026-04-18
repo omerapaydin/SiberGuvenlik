@@ -1,6 +1,6 @@
 # Network Teorisi
 
-## Open System Interconnection
+## Open System Interconnection (OSI)
 
 1.  Physical (Fiziksel Katman) - Data cables stc. // Örnek: Ethernet kablosu, fiber
 2.  Data Link (Veri Bağlantı Katmanı) - Switch, MAC Address // MAC adresi ile iletişim
