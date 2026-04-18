@@ -21,6 +21,10 @@
 - `cd ..`: Bir üst klasöre çıkar.
 - `mkdir yeniKlasor`: Yeni bir klasör oluşturur.
 - `rm dosya.txt`: Dosyayı siler.
+- `mv dosya.txt klasor` : dosyayı klasöre taşır
+- `ps aux` : tüm çalışan süreçleri detaylı gösterir
+- `kill 1234 ` : PID’si 1234 olan süreci kapatır
+- `top`: Canlı sistem izleme
 
 ## Ağ ve Ağ Araçları
 
