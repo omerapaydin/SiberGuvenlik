@@ -53,3 +53,16 @@
 - > cat notes.txt | grep pass // Dosyanın içinde pas geçenleri bulur
 
 ## Linux İzinleri
+
+- > ls -la // -rw-r--r-- 1 user user 123 Apr 24 10:00 file.txt şeklinde ayrıtı verir
+
+-     r → read (okuma)
+      w → write (yazma)
+      x → execute (çalıştırma)
+
+- User : Dosyanın sahibi olan kullanıcı (Root)
+- Group : Dosyanın ait olduğu kullanıcı grubu
+- Others : Sistemdeki geri kalan herkes (Kali)
+
+- rwx r-x rw- // User/Group/Others // 3lü grup şeklinde hangi izinler açık
+- User rwx (okuma),(yazma),çalıştırma / Others rw- (okuma),(yazma)
