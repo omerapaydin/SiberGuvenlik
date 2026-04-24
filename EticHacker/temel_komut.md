@@ -1,4 +1,4 @@
-# Temel Komutlar
+# Linux Temel Komutlar
 
 ## Paket Yönetimi ve Kurulum
 
@@ -38,6 +38,18 @@
 
 ---
 
-- wordlist.txt | grep pass //dosyanın içinde pas geçenleri bulur
+- Crack, siber güvenlik ve yazılım dünyasında genelde şu anlamlarda kullanılır: Parola kırma ,Yazılım kırma
 
-- Crack, siber güvenlik ve yazılım dünyasında genelde şu anlamlarda kullanılır:Parola kırma ,Yazılım kırma
+- /etc/passwd → Kullanıcı bilgileri var ama şifreler yok (eski sistemlerde vardı)
+- /etc/shadow → Şifrelerin hash’lenmiş halleri burada tutulur
+
+---
+
+## Linux Piping
+
+- > ls -la // Linux’ta çok kullanılan bir komuttur. Dosyaları detaylı ve gizli olanlar dahil listelemek için kullanılır.
+
+- > grep pass wordlist.txt // Dosyanın içinde pas geçenleri bulur
+- > cat notes.txt | grep pass // Dosyanın içinde pas geçenleri bulur
+
+## Linux İzinleri
