@@ -66,3 +66,25 @@
 
 - rwx r-x rw- // User/Group/Others // 3lü grup şeklinde hangi izinler açık
 - User rwx (okuma),(yazma),çalıştırma / Others rw- (okuma),(yazma)
+
+## İzinleri Değiştirmek
+
+- > chmod 777 test.py // Herkes dosyayı okuyabilir. Herkes yazabilir. Herkes çalıştırabilir
+
+7 - user (owner) - rwx
+7 - group - rwx
+7 - others - rwx
+
+- r = 4
+  w = 2
+  x = 1
+  4 + 2 + 1 = 7
+
+* 000 - 0
+  001 - 1  
+  010 - 2
+  011 - 3
+  100 - 4
+  101 - 5
+  110 - 6
+  111 - 7
