@@ -37,6 +37,15 @@ MAC filtreleme (ek güvenlik katmanı)
 Güncel firmware
 • Router açıklarını kapatır
 
+Firmware, elektronik cihazların içinde bulunan ve donanımın (hardware) nasıl çalışacağını belirleyen özel bir yazılımdır. Kısaca, cihazın “temel işletim talimatları”dır.
+
+Basitçe anlatırsak:
+
+* Donanım (hardware) = Fiziksel parçalar (telefon, bilgisayar, yazıcı vb.)
+* Yazılım (software) = Uygulamalar (oyunlar, programlar)
+* Firmware = Bu ikisinin arasında, donanımı yöneten düşük seviyeli yazılım
+
+
 ## WPA/Wi-Fi Güvenlik Analizi (Eğitim Amaçlı Pentest Notları)
 
 - > iwconfig //monitor moda geç
