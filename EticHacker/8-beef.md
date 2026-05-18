@@ -104,7 +104,7 @@ res.Body = body.replace(
 
 ## Kendimizi Nasıl Koruruz
 
-- Trayıcıdan veya herhangi biri tarafından gelen/indirilen dosyaları sağ tik>isim değiştir yapılıp right to left chacter override var mı bakabiliriz
+- Tarayıcıdan veya herhangi biri tarafından gelen/indirilen dosyaları sağ tik>isim değiştir yapılıp right to left chacter override var mı bakabiliriz
 
 - Dosyaya sağ tik> özellikler' den dosya tipi incelenir .exe olup olmadığı kontrol edilebilir.
 
