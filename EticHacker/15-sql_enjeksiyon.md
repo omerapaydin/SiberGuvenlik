@@ -14,7 +14,7 @@
 
 ---
 
-## Vertabanı Açığı Arama
+## Veritabanı Açığı Arama
 
 - Servisin Form/Giriş Ekranında Açık Aranır
 
