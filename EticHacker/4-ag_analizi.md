@@ -29,7 +29,8 @@ Nmap, ağ üzerindeki cihazları ve açık servisleri analiz etmek için kullan�
 
 ### ARP (Address Resolution Protocol) Güvenlik Açığı
 
-- Bir bilgisayar, bir IP adresine veri göndermek isterse önce o IP’ye ait MAC adresini öğrenmek için ağa ARP isteği (Who has?) yollar.Kurbana:
+- Bir bilgisayar, bir IP adresine veri göndermek isterse önce o IP’ye ait MAC adresini öğrenmek için ağa ARP isteği (Who has?) yollar.
+  Kurbana:
   “Modemin IP’si şu, ama MAC adresi benim” der.Modeme de:
   “Kurbanın IP’si şu, ama MAC adresi benim” der.
 

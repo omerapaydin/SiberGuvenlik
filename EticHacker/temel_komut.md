@@ -54,7 +54,7 @@
 
 ## Linux İzinleri
 
-- > ls -la // -rw-r--r-- 1 user user 123 Apr 24 10:00 file.txt şeklinde ayrıtı verir
+- > ls -la // -rw r-- r-- 1 user user 123 Apr 24 10:00 file.txt şeklinde ayrıtı verir
 
 -     r → read (okuma)
       w → write (yazma)

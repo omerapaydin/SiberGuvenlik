@@ -55,8 +55,8 @@
 
 - Linux için
 
-- > hashcat -m 500 mylinuxhash.txt /usr/share/wordlist/fasttract.txt // hash lerin olduğu klasöre konumlanılır. 1800 kendi hash bölümü bulunur. Kali için MD5 $1$ operating system olan seçilir. Sonuna wordlist eklenir. Wordlist içinde hedef password varsa şifre bulunur.
+- > hashcat -m 500 mylinuxhash.txt /usr/share/wordlist/fasttract.txt // hash lerin olduğu klasöre konumlanılır. 500 kendi hash bölümü bulunur. Kali için MD5 $1$ operating system olan seçilir. Sonuna wordlist eklenir. Wordlist içinde hedef password varsa şifre bulunur.
 
 - Windows için
 
-- > hashcat -m 1000 mywindowshash.txt /usr/share/wordlist/fasttract.txt // hash lerin olduğu klasöre konumlanılır. 1800 kendi hash bölümü bulunur. Kali için NTLM operating system olan seçilir. Sonuna wordlist eklenir. Wordlist içinde hedef password varsa şifre bulunur.
+- > hashcat -m 1000 mywindowshash.txt /usr/share/wordlist/fasttract.txt // hash lerin olduğu klasöre konumlanılır. 1000 kendi hash bölümü bulunur. Kali için NTLM operating system olan seçilir. Sonuna wordlist eklenir. Wordlist içinde hedef password varsa şifre bulunur.
