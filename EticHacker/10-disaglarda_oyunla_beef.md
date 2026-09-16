@@ -1,6 +1,6 @@
 # Dış Ağda Beef Saldırısı
 
-- DigitalOcean üyelik alınır. Mail adresine satın alınan sunucun ip adresi ve şifresi yollanır.
+- DigitalOcean üyelik alınabilir
 
 * Digital Ocean Ücretsiz Kredi Kayıt Linki: https://m.do.co/c/5ecb7c546723
 
