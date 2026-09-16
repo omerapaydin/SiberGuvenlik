@@ -47,6 +47,8 @@ Nmap, ağ üzerindeki cihazları ve açık servisleri analiz etmek için kullan�
 
 - > arp -a // Aynı IP için birden fazla MAC adresi görülmesi durumunda ağ anomalisi tespit edilebilir. Olası ARP spoofing saldırılarının tespit edilmesine yardımcı olur
 
+- > ip neigh // Ağdaki cihazların IP ve MAC adresi eşleşmelerini gösterir. Beklenmeyen veya değişen IP–MAC eşleşmelerinin görülmesi, olası ARP spoofing saldırılarının tespit edilmesine yardımcı olur.
+
 - > arp // Senin daha önce iletişim kurduğun cihazlar görünür
 
 ### Wireshark
