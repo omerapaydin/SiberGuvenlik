@@ -4,7 +4,7 @@
 
 - İnternetteki bilgileri toplayıp aralarındaki ilişkileri gösteren analiz programı. Kişi, e-posta, domain, IP, sosyal medya gibi veriler arasında bağlantı kurar
 
-- Arayüzden website seçilir. Site url girilir. All Transform seçilir. Tarama sonucu çıkan bilgilerle site açıkları aranabilir. Örn: site wordpress kullanıyor. Wordpress exploit denenebilir
+- Arayüzden website seçilir. Site url girilir. Tarama sonucu çıkan bilgilerle site açıkları aranabilir. Örn: site wordpress kullanıyor. Wordpress exploit denenebilir
 
 ## Netcraft
 

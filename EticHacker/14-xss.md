@@ -29,4 +29,4 @@
 
 * Beef kullanarak
 
-- Terminalde çıkan hook kodunu tarayıcıda form kısmına gir ve kaydet. Kullanıcılar o sayfaya girdiğinde beef arayüzünde online olurlar
+- Beef'in verdiği hook kodunu tarayıcıda form kısmına gir ve kaydet. Kullanıcılar o sayfaya girdiğinde beef arayüzünde online olurlar
