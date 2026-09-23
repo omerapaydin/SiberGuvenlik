@@ -2,6 +2,8 @@
 
 ## Paket Yönetimi ve Kurulum
 
+- `passwd` : Şifre değişimi
+
 - `apt update`: Paket yöneticisini günceller.
 - `cd /opt`: Genellikle yazılımlar buraya indirilir.
 - `git clone https://github.com/... .git`: GitHub'dan kodları indirir.
