@@ -28,6 +28,7 @@
 
 - Ters IP araması (Reverse IP Lookup), bir IP adresine bağlı olan domain / web sitelerini bulma işlemidir. Aynı sunucuda birçok site olabilir.
 - yougetsignal.com
+- bing.com // arama kısmına ip: {ip}
 
 ## Whois Sorgusu
 
@@ -48,6 +49,4 @@
 - Site sonuna eklenir : https://siteadi.com/robots.txt
 - Gizli klasörleri gösterebilir (bazen güvenlik açığı olur)
 
-- > dirb https://siteadi.com
-
-- Web sitelerinde gizli klasör ve dosyaları bulmak için kullanılan bir araçtır. Yani siteye kelime listesi ile tek tek klasör dener.
+- > dirb https://siteadi.com // Web sitelerinde gizli klasör ve dosyaları bulmak için kullanılan bir araçtır. Yani siteye kelime listesi ile tek tek klasör dener.
