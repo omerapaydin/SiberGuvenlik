@@ -53,7 +53,11 @@ MAC adresi, ağ kartına üretici tarafından verilen **benzersiz fiziksel kimli
 - > macchanger --random wlan0 // mac adresi değişir
 - > ifconfig wlan0 up
 
--sorun çıkarsa-
+  -Alternatif Mac Değiştirme-
+
+- > ifconfig wlan0 down // Arayüzü kapat
+- > ifconfig hw ether 00:11:22:33:44:55
+- > ifconfig wlan0 up
 
 - > service NetworkManager restart // Ağ servisini yeniden başlat
 
