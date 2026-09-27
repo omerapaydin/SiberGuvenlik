@@ -42,7 +42,7 @@
 
 - Crack, siber güvenlik ve yazılım dünyasında genelde şu anlamlarda kullanılır: Parola kırma ,Yazılım kırma
 
-- /etc/passwd → Kullanıcı bilgileri var ama şifreler yok (eski sistemlerde vardı)
+- /etc/passwd → Kullanıcı bilgileri var ama şifreler yok
 - /etc/shadow → Şifrelerin hash’lenmiş halleri burada tutulur
 
 ---
