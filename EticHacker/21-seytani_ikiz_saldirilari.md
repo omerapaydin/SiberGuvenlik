@@ -17,8 +17,8 @@
   > Evil Twin AP attack with captive portal (monitor mode needed) // sahte/yapay Wi-Fi ağı senaryosu
 - Yapılan taramada istenilen wifi ağı göründüğünde durdurulur dump
   > İstenilen ağ numarası seçilir
-  > Deauth aireplay attack // Handshake alınır
-  > Turkish // Kullanıcı ağdan atıldığında kendisine gelecek arayüzdeki yazı dili seçilir. Bu arayüz tekrar bağlanmak için şifre isteyecek bir arayüz
+  > Deauth aireplay attack // İstemcinin bağlantısı kesilir; yeniden bağlantı sürecinde handshake yakalanabilir.
+  > Turkish // Captive Portal arayüzünün dili Türkçe olarak seçilir.
 - Kullanıcı şifre girdiğinde ağ şifresi kaydedilir
 
 - /opt/airgeddon/language_strings.sh // nano ile düzenlenebilir arayüz kısmında çıkacak yazılar düzenlenebilir
@@ -40,4 +40,4 @@
   ↓
   Portal üzerinden girilen bilginin gözlemlenmesi
 
-- Fluxion alternatiftir
+- Fluxion: Evil Twin / Captive Portal tabanlı kablosuz ağ güvenlik testlerinde kullanılabilen Airgeddon’a alternatif araçlardan biridir.
