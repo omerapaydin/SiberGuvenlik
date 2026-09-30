@@ -57,6 +57,10 @@ Nasıl?
 
 ### TCP (Transmission Control Protocol) (SYN-SYN ACK-ACK) :
 
+- TCP (Transmission Control Protocol), internet üzerindeki iki cihaz arasında verilerin güvenilir ve sıralı şekilde iletilmesini sağlayan bir iletişim protokolüdür.
+
+- Örneğin HTTP/HTTPS, SSH ve FTP gibi birçok protokol TCP kullanır.
+
 - FTP (21), SSH (22), Telnet (23), SMTP(25), HTTP(80),HTTPS(443)
 
 1. SYN
