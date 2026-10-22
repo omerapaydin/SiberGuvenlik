@@ -90,3 +90,64 @@
   101 - 5
   110 - 6
   111 - 7
+
+---
+
+# Linux - Find Komutu
+
+`find` komutu, Linux sistemlerinde dosya ve dizinleri
+belirli kriterlere göre aramak için kullanılır.
+
+## 1. Tüm Dosyaları Listeleme
+
+find . -type f
+
+- Bulunulan dizindeki ve alt dizinlerdeki tüm dosyaları listeler.
+
+## 2. Klasörleri Listeleme
+
+find . -type d
+
+- Bulunulan dizindeki ve alt dizinlerdeki klasörleri listeler.
+
+## 3. TXT Dosyalarını Bulma
+
+find . -name "\*.txt"
+
+- `.txt` uzantılı dosya ve dizinleri arar.
+
+## 4. PHP Dosyalarını Bulma
+
+find . -type f -name "\*.php"
+
+- `.php` uzantılı dosyaları bulur.
+
+## 5. Home Dizinindeki Dosyaları Listeleme
+
+find /home -type f
+
+- `/home` dizini ve alt dizinlerindeki tüm dosyaları listeler.
+
+## 6. Büyük Dosyaları Bulma
+
+find . -type f -size +100M
+
+- 100 MiB'den büyük dosyaları bulur.
+
+## Parametreler
+
+- `find` → Dosya ve dizin arama komutu.
+- `.` → Bulunulan dizin.
+- `-type f` → Normal dosyaları arar.
+- `-type d` → Dizinleri arar.
+- `-name` → Dosya veya dizin adına göre arama yapar.
+- `-size` → Dosya boyutuna göre arama yapar.
+- `/home` → Aramanın başlayacağı dizin.
+
+## Özet
+
+find → Dosya ve dizin arama
+-type f → Dosyalar
+-type d → Klasörler
+-name → İsme göre arama
+-size → Boyuta göre arama
