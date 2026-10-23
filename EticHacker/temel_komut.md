@@ -158,3 +158,19 @@ find → Dosya ve dizin arama
   Örnek çıktı:
 - /home/kali/Desktop/text.txt
   /home/kali/Documents/text.txt
+
+---
+
+# Linux - Wget Komutu
+
+`wget`, Linux terminali üzerinden internetten dosya indirmek için kullanılan bir araçtır.
+
+## Dosya İndirme
+
+```bash
+wget https://example.com/file.zip
+```
+
+- `wget` → Dosya indirme komutu.
+- `https://example.com/file.zip` → İndirilecek dosyanın URL adresi.
+- İndirilen dosya, terminalde bulunulan dizine kaydedilir.
