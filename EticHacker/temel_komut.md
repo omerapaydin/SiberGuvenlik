@@ -151,3 +151,10 @@ find → Dosya ve dizin arama
 -type d → Klasörler
 -name → İsme göre arama
 -size → Boyuta göre arama
+
+---
+
+- `locate text.txt` → Linux sisteminde adı text.txt geçen dosya ve dizinlerin konumlarını bulmak için kullanılır.
+  Örnek çıktı:
+- /home/kali/Desktop/text.txt
+  /home/kali/Documents/text.txt
