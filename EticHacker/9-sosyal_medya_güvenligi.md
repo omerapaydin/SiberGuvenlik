@@ -1,3 +1,38 @@
+# Sosyal Medya Güvenliği
+
+PyPhisher Nedir?
+
+PyPhisher, Python tabanlı bir phishing (oltalama) simülasyon aracıdır. Gerçek web sitelerine benzeyen sahte giriş sayfaları oluşturarak sosyal mühendislik saldırılarının nasıl çalıştığını göstermeye yarar.
+
+Nasıl Kullanılır?
+
+İzinli bir siber güvenlik laboratuvarında temel çalışma mantığı şöyledir:
+
+1. PyPhisher başlatılır.
+2. Test edilecek giriş sayfası şablonu seçilir.
+3. Laboratuvar ortamında sahte giriş sayfası oluşturulur.
+4. Test kullanıcısı sayfayı ziyaret eder.
+5. Gerçek parola kullanılmadan, sahte test verileriyle form davranışı incelenir.
+6. Phishing saldırılarının nasıl tespit edilebileceği değerlendirilir.
+
+# Sahte Sms Atmak
+
+## octopush
+
+Octopush, toplu SMS, e-posta ve otomatik bildirim göndermek için kullanılan bir iletişim platformudur.
+
+Siber güvenlik açısından:
+
+- SMS Phishing (Smishing): Sahte SMS yoluyla kullanıcıları kandırmaya yönelik saldırı türüdür.
+- Sosyal mühendislik testleri: İzinli SMS farkındalık kampanyalarında kullanılabilir.
+- SMS API: Yazılımlar üzerinden otomatik SMS gönderilmesini sağlar.
+
+* Sanal numara satın alınıp üye olunabilir
+
+* receivesms ile sms testi yapılabilir
+
+---
+
 # Instagram Oltalama Saldırıları
 
 - Instagram Şifre sıfırlama veya instagram giriş sayfasının orjinal hali kodları kopyalanır. Html css kodları ile hazırlanır.
